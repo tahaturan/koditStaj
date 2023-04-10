@@ -127,3 +127,15 @@ let kopek : Kopek = Kopek()
 kopek.sesCikar()
 
 //Super Class da bulunan Metodu Degistirmek istersek override etmis oluruz ve sub class a uygun bir metod haline getirmis oluruz
+
+//PolyMorphism
+print("----------PolyMorphism----------")
+
+// Daha Kapsayici bir kulanim saglamak icin kullanilir
+// SuperClass gibi gorunup SubClass gibi davranir
+
+let karabas:Hayvan = Kopek()
+karabas.sesCikar()
+
+// burada aslinda bana hayvan sinifindan bir nesne turet ddemis olduk hayvan sinifi kapsayici sinif oldugundan genel bir gorunum kazandirdik degiskenimize
+// fakat davranisi subclass gibi olur onun metod ozelliklerini kullanir
