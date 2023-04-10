@@ -87,3 +87,50 @@ for k in siralama4{
     print("\(k.kisiNo ?? 0) - \(k.kisiAd ?? "")")
 
 }
+print("-------------------------")
+
+// composition
+
+class Adres{
+    let il:String?
+    let ilce:String?
+    
+    init(il:String , ilce:String) {
+        self.il = il
+        self.ilce = ilce
+    }
+}
+
+class Personel{
+    let personelNo:Int?
+    let personelIsim:String?
+    let personelAdres:Adres?
+    
+    init(personelNo:Int , personelIsim:String , personelAdres:Adres) {
+        self.personelNo = personelNo
+        self.personelIsim = personelIsim
+        self.personelAdres = personelAdres
+    }
+}
+
+let adres1 : Adres = Adres(il: "Aydin", ilce: "Soke")
+let adres2 : Adres = Adres(il: "Denizli", ilce: "Pamukkale")
+let adres3 : Adres = Adres(il: "Izmir", ilce: "Bornova")
+
+
+let personel1:Personel = Personel(personelNo: 110, personelIsim: "Taha", personelAdres: adres1)
+let personel2:Personel = Personel(personelNo: 140, personelIsim: "Selin", personelAdres: adres2)
+let personel3:Personel = Personel(personelNo: 410, personelIsim: "Turan", personelAdres: adres3)
+
+let personelListesi:[Personel] = [personel1 , personel2 , personel3]
+
+for personel in personelListesi{
+    print("---------------------------")
+    print("Personel No: \(personel.personelNo ?? 0)")
+    print("Personel Adi: \(personel.personelIsim ?? "")")
+    print("Personelin Adresi")
+    print("Personel Il: \(personel.personelAdres?.il ?? "")")
+    print("Personel Ilce: \(personel.personelAdres?.ilce ?? "")")
+          }
+
+
