@@ -30,4 +30,60 @@ for ogrenci in ogrenciListesi{
     print("Ogrenci Sinif: \(ogrenci.sinif ?? "")")
     
 }
+print("---------------------------")
+// Array sort()
 
+class Kisiler{
+    let kisiNo:Int?
+    let kisiAd:String?
+    
+    init(kisino:Int , kisiAd:String) {
+        self.kisiNo = kisino
+        self.kisiAd = kisiAd
+    }
+}
+
+let kisi1 = Kisiler(kisino: 1, kisiAd: "Taha")
+let kisi2 = Kisiler(kisino: 2, kisiAd: "Selin")
+let kisi3 = Kisiler(kisino: 3, kisiAd: "Turan")
+
+let kisilerArray: [Kisiler] = [kisi1, kisi2 , kisi3]
+
+print("Once")
+
+for k in kisilerArray{
+    print("\(k.kisiNo ?? 0) - \(k.kisiAd ?? "")")
+}
+
+print("Sayisal Buyukten Kucuge")
+
+let siralama1 = kisilerArray.sorted(by: {$0.kisiNo! > $1.kisiNo!})
+
+for k in siralama1{
+    print("\(k.kisiNo ?? 0) - \(k.kisiAd ?? "")")
+}
+
+print("Sayisal Kucukten Buyuge")
+
+let siralama2 = kisilerArray.sorted(by: {$0.kisiNo! < $1.kisiNo!})
+
+for k in siralama2{
+    print("\(k.kisiNo ?? 0) - \(k.kisiAd ?? "")")
+}
+
+print("Harfsel olarak Kucukten Buyuge")
+
+let siralama3 = kisilerArray.sorted(by: {$0.kisiAd! > $1.kisiAd!})
+
+for k in siralama3{
+    print("\(k.kisiNo ?? 0) - \(k.kisiAd ?? "")")
+
+}
+ print("Harfsel olarak Buyukten Kucuge")
+ 
+let siralama4 = kisilerArray.sorted(by: {$0.kisiAd! < $1.kisiAd!})
+
+for k in siralama4{
+    print("\(k.kisiNo ?? 0) - \(k.kisiAd ?? "")")
+
+}
