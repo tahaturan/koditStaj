@@ -17,3 +17,15 @@ print("15km : \(15.km) metredir")
 
 // bu sekildde Genel siniflara veya metodlarimizaz extencion yazarak islerimizi kolaylastirabiliriz
 
+// Extension metod Kullanimi
+
+print("-------------------")
+
+extension String {
+    func yerDegistir(yeniHarf:String , eskiHarf:String) -> String {
+        return self.replacingOccurrences(of: yeniHarf, with: eskiHarf)
+    }
+}
+
+let str:String = "Aydin".yerDegistir(yeniHarf: "A", eskiHarf: "E")
+print(str)
