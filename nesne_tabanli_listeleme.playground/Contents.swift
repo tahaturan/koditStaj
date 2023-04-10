@@ -133,4 +133,38 @@ for personel in personelListesi{
     print("Personel Ilce: \(personel.personelAdres?.ilce ?? "")")
           }
 
+print("---------------------------------")
+// Nesne Tabanli Listeleme Dictionary
 
+class OgrenciDic{
+    let numara:Int?
+    let adi:String?
+    let sinif:String?
+    
+    init(numara:Int , adi:String , sinif:String) {
+        self.numara = numara
+        self.adi = adi
+        self.sinif = sinif
+    }
+}
+
+var ornekOgrenci1 = OgrenciDic(numara: 100, adi: "Taha", sinif: "12A")
+var ornekOgrenci2 = OgrenciDic(numara: 150, adi: "Selin", sinif: "12A")
+var ornekOgrenci3 = OgrenciDic(numara: 110, adi: "Muhammed", sinif: "11A")
+var ornekOgrenci4 = OgrenciDic(numara: 170, adi: "Turan", sinif: "10A")
+
+var ogrenciDictionary = [Int : OgrenciDic]()
+
+ogrenciDictionary[ornekOgrenci1.numara!] = ornekOgrenci1
+ogrenciDictionary[ornekOgrenci2.numara!] = ornekOgrenci2
+ogrenciDictionary[ornekOgrenci3.numara!] = ornekOgrenci3
+ogrenciDictionary[ornekOgrenci4.numara!] = ornekOgrenci4
+
+
+for (ogrenciNo , nesne) in ogrenciDictionary{
+    print("--------------")
+    print("Ogrenci No    : \(ogrenciNo)")
+    print("Ogrenci Ad    : \(nesne.adi!)")
+    print("Ogrenci Sinif : \(nesne.sinif!)")
+
+}
