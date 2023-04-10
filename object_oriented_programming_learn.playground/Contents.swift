@@ -92,3 +92,38 @@ malikane.bilgi()
 print("--------")
 villa.bilgi()
 
+// Override : Uzerine Yazma
+print("---------Override-------")
+class Hayvan{
+    func sesCikar()  {
+        print("Ses Yok")
+    }
+}
+
+class Memeli:Hayvan{
+
+}
+class Kedi:Memeli{
+    override func sesCikar() {
+        print("Miyav Miyavv")
+    }
+}
+
+class Kopek:Hayvan{
+    override func sesCikar() {
+        print("Havv Havvv")
+    }
+}
+
+let hayvan : Hayvan = Hayvan()
+
+hayvan.sesCikar()
+
+let kedi : Kedi = Kedi()
+kedi.sesCikar()
+
+let kopek : Kopek = Kopek()
+
+kopek.sesCikar()
+
+//Super Class da bulunan Metodu Degistirmek istersek override etmis oluruz ve sub class a uygun bir metod haline getirmis oluruz
