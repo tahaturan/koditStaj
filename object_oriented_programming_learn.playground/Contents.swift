@@ -40,3 +40,55 @@ print(arac.renk ?? "Nil")
 
 //NOT: Sub Class dan Super Class a erisilebilir ama Super Class dan Sub Class lara erisilemez
 
+// Ornek Calisma
+
+class Ev{ //Super Class
+    let metreKare:Int?
+    let pencereSayisi:Int?
+    let bulunduguIl:String?
+    
+    init(metreKare:Int , pencereSayisi:Int , bulunduguIl:String) {
+        self.metreKare = metreKare
+        self.pencereSayisi = pencereSayisi
+        self.bulunduguIl = bulunduguIl
+    }
+}
+
+class Malikane : Ev{ //Sub Class Ev
+    let odaSayisi:Int?
+    
+    init(odaSayisi:Int ,metreKare:Int, pencereSayisi:Int , bulunduguIl:String) {
+        self.odaSayisi = odaSayisi
+        
+        super.init(metreKare: metreKare, pencereSayisi: pencereSayisi, bulunduguIl: bulunduguIl)
+    }
+    
+    func bilgi()  {
+        print(" Oda Sayisi: \(odaSayisi ?? 0)\n Metre Kare: \(self.metreKare ?? 0)\n Pencere Sayisi: \(self.pencereSayisi ?? 0)\n Il: \(self.bulunduguIl ?? "Nill")")
+    }
+}
+
+class Villa:Ev{ //Sub Class Ev
+    let garajVarMi:Bool?
+    
+    init(garajVarMi:Bool , metreKare:Int , pencereSayisi:Int , bulunduguIl:String) {
+        self.garajVarMi = garajVarMi
+        
+        super.init(metreKare: metreKare, pencereSayisi: pencereSayisi, bulunduguIl: bulunduguIl)
+    }
+    
+    func bilgi()  {
+        print(" Garaj Var Mi: \(garajVarMi ?? false)\n Metre Kare: \(self.metreKare ?? 0)\n Pencere Sayisi: \(self.pencereSayisi ?? 0)\n Il: \(self.bulunduguIl ?? "Nill")")
+    }
+    
+}
+
+
+let malikane : Malikane = Malikane(odaSayisi: 20, metreKare: 1500, pencereSayisi: 25, bulunduguIl: "Denizli")
+let villa: Villa = Villa(garajVarMi: true, metreKare: 150, pencereSayisi: 5, bulunduguIl: "Aydin")
+
+
+malikane.bilgi()
+print("--------")
+villa.bilgi()
+
