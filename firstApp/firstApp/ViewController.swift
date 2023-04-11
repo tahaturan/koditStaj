@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         
         let appleLogo = UIImage(named: "appleLogo")
         
+        let buttonColor = UIColor(named: "buttonColor")
+        
     }
 
 
