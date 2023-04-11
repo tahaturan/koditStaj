@@ -40,4 +40,24 @@ for harf in strA{
 }
 print("----------------")
 
+// String Metodlari
+
+// icerisinde veri arama
+
+if strA.contains("Mer"){
+    print("iceriyor")
+}else{
+    print("içermiyor")
+}
+
+var denemeStr = "karakter ekleme"
+
+denemeStr.insert("w", at: denemeStr.index(denemeStr.startIndex , offsetBy: 4))
+print(denemeStr)
+// 4. index e w karakterini ekledik
+
+denemeStr.remove(at: denemeStr.index(denemeStr.startIndex , offsetBy: 4))
+print(denemeStr)
+
+
 
