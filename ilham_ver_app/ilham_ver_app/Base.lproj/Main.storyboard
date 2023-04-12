@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3KO-xy-ck7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uWZ-eq-y34">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -187,6 +187,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sjf-Rn-PPd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1539.6946564885495" y="-32.394366197183103"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SoQ-lY-2bP">
+            <objects>
+                <viewController id="uWZ-eq-y34" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DAY-dT-nR6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gys-u1-Hop">
+                                <rect key="frame" x="177" y="168" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fr-xn-YH5">
+                                <rect key="frame" x="157" y="492" width="79" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="English"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zX4-pR-xHx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zX4-pR-xHx" firstAttribute="bottom" secondItem="7fr-xn-YH5" secondAttribute="bottom" constant="291" id="QFg-NF-B7i"/>
+                            <constraint firstItem="Gys-u1-Hop" firstAttribute="top" secondItem="zX4-pR-xHx" secondAttribute="top" constant="109" id="VKV-p9-g2U"/>
+                            <constraint firstItem="Gys-u1-Hop" firstAttribute="centerX" secondItem="DAY-dT-nR6" secondAttribute="centerX" id="b0s-25-wZF"/>
+                            <constraint firstItem="7fr-xn-YH5" firstAttribute="centerX" secondItem="DAY-dT-nR6" secondAttribute="centerX" id="qPh-eX-5vZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhA-WH-3JS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2260" y="-32"/>
         </scene>
     </scenes>
     <resources>

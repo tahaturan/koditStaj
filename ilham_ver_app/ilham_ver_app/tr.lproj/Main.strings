@@ -1,0 +1,48 @@
+
+/* Class = "UITextField"; placeholder = "Sifre"; ObjectID = "0Gu-Ud-j0w"; */
+"0Gu-Ud-j0w.placeholder" = "Sifre";
+
+/* Class = "UILabel"; text = "Yardim?"; ObjectID = "1lJ-kV-nhv"; */
+"1lJ-kV-nhv.text" = "Yardim?";
+
+/* Class = "UIButton"; configuration.title = "Giris"; ObjectID = "2EG-Id-ykz"; */
+"2EG-Id-ykz.configuration.title" = "Giris";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2EG-Id-ykz"; */
+"2EG-Id-ykz.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "English"; ObjectID = "7fr-xn-YH5"; */
+"7fr-xn-YH5.configuration.title" = "Turkce";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7fr-xn-YH5"; */
+"7fr-xn-YH5.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Hello"; ObjectID = "Gys-u1-Hop"; */
+"Gys-u1-Hop.text" = "Merhaba";
+
+/* Class = "UIButton"; configuration.title = "Sonraki Tarif"; ObjectID = "Mel-77-nAR"; */
+"Mel-77-nAR.configuration.title" = "Sonraki Tarif";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Mel-77-nAR"; */
+"Mel-77-nAR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Steve Jops"; ObjectID = "WSp-yH-ftr"; */
+"WSp-yH-ftr.text" = "Steve Jops";
+
+/* Class = "UIButton"; configuration.title = "Ilham Ver"; ObjectID = "YYL-9h-Ayr"; */
+"YYL-9h-Ayr.configuration.title" = "Ilham Ver";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YYL-9h-Ayr"; */
+"YYL-9h-Ayr.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Dunyayi Degistirebilecegini dusuneccek akdar cilgin olan insanlar dunyayi degistirebilirler."; ObjectID = "emw-28-Fqd"; */
+"emw-28-Fqd.text" = "Dunyayi Degistirebilecegini dusuneccek akdar cilgin olan insanlar dunyayi degistirebilirler.";
+
+/* Class = "UILabel"; text = "Tavuk Izgara"; ObjectID = "hAG-2X-vVJ"; */
+"hAG-2X-vVJ.text" = "Tavuk Izgara";
+
+/* Class = "UITextField"; placeholder = "Kullanici Adi"; ObjectID = "qVl-1e-MSW"; */
+"qVl-1e-MSW.placeholder" = "Kullanici Adi";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "sof-Wr-REZ"; */
+"sof-Wr-REZ.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
