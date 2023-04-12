@@ -16,21 +16,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hello Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJE-K8-hUv">
-                                <rect key="frame" x="135" y="389" width="123" height="32"/>
+                                <rect key="frame" x="135" y="410" width="123" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fSk-ls-pvR">
-                                <rect key="frame" x="76" y="184" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fSk-ls-pvR">
+                                <rect key="frame" x="-3.6666666666666572" y="184" width="400.33333333333326" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTP-IG-0qF">
-                                <rect key="frame" x="158" y="532" width="85" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="A2a-pe-aIL"/>
-                                    <constraint firstAttribute="height" constant="60" id="xvh-7H-LKf"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTP-IG-0qF">
+                                <rect key="frame" x="158" y="553" width="85" height="39"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
@@ -38,13 +33,16 @@
                                 </buttonConfiguration>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="GhT-BP-lXx"/>
+                        <viewLayoutGuide key="safeArea" id="6uh-8K-WqU"/>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xTP-IG-0qF" firstAttribute="top" secondItem="kJE-K8-hUv" secondAttribute="bottom" constant="111" id="94M-Bm-DDU"/>
-                            <constraint firstItem="GhT-BP-lXx" firstAttribute="trailing" secondItem="xTP-IG-0qF" secondAttribute="trailing" constant="150" id="Srt-IF-M0r"/>
-                            <constraint firstItem="GhT-BP-lXx" firstAttribute="bottom" secondItem="xTP-IG-0qF" secondAttribute="bottom" constant="226" id="wrf-po-L7I"/>
-                            <constraint firstItem="xTP-IG-0qF" firstAttribute="leading" secondItem="GhT-BP-lXx" secondAttribute="leading" constant="158" id="yz8-1A-P0Z"/>
+                            <constraint firstItem="kJE-K8-hUv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0eR-iI-iFj"/>
+                            <constraint firstItem="kJE-K8-hUv" firstAttribute="centerY" secondItem="fSk-ls-pvR" secondAttribute="centerY" id="4BR-ug-Dp3"/>
+                            <constraint firstItem="fSk-ls-pvR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BG9-MV-B8k"/>
+                            <constraint firstItem="fSk-ls-pvR" firstAttribute="top" secondItem="6uh-8K-WqU" secondAttribute="top" constant="125" id="QjW-5g-iRy"/>
+                            <constraint firstItem="xTP-IG-0qF" firstAttribute="top" secondItem="kJE-K8-hUv" secondAttribute="top" id="pia-Cd-iz2"/>
+                            <constraint firstItem="fSk-ls-pvR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-19.666666666666657" id="sjh-aw-XN8"/>
+                            <constraint firstItem="fSk-ls-pvR" firstAttribute="centerX" secondItem="kJE-K8-hUv" secondAttribute="centerX" id="wtP-yu-Nwj"/>
                         </constraints>
                     </view>
                 </viewController>
