@@ -17,7 +17,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print("viewDidLoad Function Called")
+        nameTextFiled.text = ""
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print("viewDidDisappear Function Called")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear Function Called")
+        nameTextFiled.text = ""
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        print("viewDidAppear Function Called")
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("viewWillDisappear Function Called")
     }
     
     
