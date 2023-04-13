@@ -16,25 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud9-YX-VtJ">
-                                <rect key="frame" x="93" y="82" width="206" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Layout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud9-YX-VtJ">
+                                <rect key="frame" x="10" y="69" width="373" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="HsR-JV-O4r"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metalica" translatesAutoresizingMaskIntoConstraints="NO" id="BPR-EM-yAT">
-                                <rect key="frame" x="16" y="200" width="361" height="639"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metalica" translatesAutoresizingMaskIntoConstraints="NO" id="BPR-EM-yAT">
+                                <rect key="frame" x="16" y="187" width="361" height="270"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="BPR-EM-yAT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="358-lX-3Di"/>
-                            <constraint firstItem="ud9-YX-VtJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="7O1-GQ-cXJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ud9-YX-VtJ" secondAttribute="trailing" constant="94" id="8Wp-xI-AIC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BPR-EM-yAT" secondAttribute="trailing" constant="16" id="UhL-gz-Okz"/>
-                            <constraint firstItem="ud9-YX-VtJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="dR8-iX-slm"/>
-                            <constraint firstItem="BPR-EM-yAT" firstAttribute="top" secondItem="ud9-YX-VtJ" secondAttribute="bottom" constant="81" id="v3B-Ha-VH5"/>
+                            <constraint firstItem="ud9-YX-VtJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="LjB-8C-xkT"/>
+                            <constraint firstItem="ud9-YX-VtJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="VZS-mX-qbz"/>
+                            <constraint firstItem="BPR-EM-yAT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vwp-bK-O0C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BPR-EM-yAT" secondAttribute="trailing" constant="16" id="bxT-XU-FwN"/>
+                            <constraint firstItem="BPR-EM-yAT" firstAttribute="top" secondItem="ud9-YX-VtJ" secondAttribute="bottom" constant="81" id="kMh-oU-u3W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BPR-EM-yAT" secondAttribute="bottom" constant="361" id="lvW-By-rpg"/>
+                            <constraint firstItem="ud9-YX-VtJ" firstAttribute="centerX" secondItem="BPR-EM-yAT" secondAttribute="centerX" id="tU5-UN-KDy"/>
                         </constraints>
                     </view>
                 </viewController>
