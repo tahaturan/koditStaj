@@ -28,17 +28,51 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metalica" translatesAutoresizingMaskIntoConstraints="NO" id="BPR-EM-yAT">
                                 <rect key="frame" x="16" y="187" width="361" height="270"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RjV-ag-1mb">
+                                <rect key="frame" x="20" y="500" width="353" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7M-bH-LHl">
+                                        <rect key="frame" x="136" y="0.0" width="81" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Surname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVj-Bp-zQr">
+                                        <rect key="frame" x="118" y="35.333333333333371" width="117.33333333333331" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b5-AJ-Fdp">
+                                        <rect key="frame" x="146" y="70.666666666666629" width="61" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZf-oC-jqf">
+                                <rect key="frame" x="20" y="623" width="353" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go Back"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="qZf-oC-jqf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fll-kO-bPk"/>
                             <constraint firstItem="ud9-YX-VtJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="LjB-8C-xkT"/>
+                            <constraint firstItem="qZf-oC-jqf" firstAttribute="top" secondItem="RjV-ag-1mb" secondAttribute="bottom" constant="32" id="SBL-AQ-eKv"/>
                             <constraint firstItem="ud9-YX-VtJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="VZS-mX-qbz"/>
                             <constraint firstItem="BPR-EM-yAT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vwp-bK-O0C"/>
+                            <constraint firstItem="RjV-ag-1mb" firstAttribute="top" secondItem="BPR-EM-yAT" secondAttribute="bottom" constant="43" id="aTK-HR-jOg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BPR-EM-yAT" secondAttribute="trailing" constant="16" id="bxT-XU-FwN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qZf-oC-jqf" secondAttribute="trailing" constant="20" id="eK0-KK-QOq"/>
+                            <constraint firstItem="RjV-ag-1mb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gI5-fE-ugp"/>
                             <constraint firstItem="BPR-EM-yAT" firstAttribute="top" secondItem="ud9-YX-VtJ" secondAttribute="bottom" constant="81" id="kMh-oU-u3W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BPR-EM-yAT" secondAttribute="bottom" constant="361" id="lvW-By-rpg"/>
                             <constraint firstItem="ud9-YX-VtJ" firstAttribute="centerX" secondItem="BPR-EM-yAT" secondAttribute="centerX" id="tU5-UN-KDy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RjV-ag-1mb" secondAttribute="trailing" constant="20" id="tk9-yk-UXS"/>
                         </constraints>
                     </view>
                 </viewController>
