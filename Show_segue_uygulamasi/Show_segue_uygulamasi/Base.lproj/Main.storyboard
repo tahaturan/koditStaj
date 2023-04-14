@@ -62,6 +62,14 @@
                                     <segue destination="cfX-iP-sHM" kind="show" id="tEN-tv-fWt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hle-Rf-dsk">
+                                <rect key="frame" x="168.66666666666666" y="559" width="56" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Geri"/>
+                                <connections>
+                                    <action selector="geri:" destination="NxL-Nl-HTx" eventType="touchUpInside" id="Dvv-7s-Cbs"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpm-Cl-CqA">
                                 <rect key="frame" x="168.33333333333334" y="72" width="56.666666666666657" height="119.66666666666669"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
@@ -75,8 +83,10 @@
                             <constraint firstItem="gpm-Cl-CqA" firstAttribute="top" secondItem="DMx-yd-CLw" secondAttribute="top" constant="72" id="3fI-AV-gbD"/>
                             <constraint firstItem="k8M-xr-cbK" firstAttribute="centerX" secondItem="Elb-49-aUX" secondAttribute="centerX" id="8Lx-Vm-cRV"/>
                             <constraint firstItem="k8M-xr-cbK" firstAttribute="top" secondItem="gpm-Cl-CqA" secondAttribute="bottom" constant="160.33000000000001" id="BSL-bD-ASa"/>
+                            <constraint firstItem="hle-Rf-dsk" firstAttribute="centerX" secondItem="Elb-49-aUX" secondAttribute="centerX" id="E6j-zx-ebK"/>
                             <constraint firstItem="k8M-xr-cbK" firstAttribute="top" secondItem="gpm-Cl-CqA" secondAttribute="bottom" constant="160.33000000000001" id="UUq-B3-nmr"/>
                             <constraint firstItem="gpm-Cl-CqA" firstAttribute="centerX" secondItem="Elb-49-aUX" secondAttribute="centerX" id="Yzi-B3-W0H"/>
+                            <constraint firstItem="hle-Rf-dsk" firstAttribute="top" secondItem="k8M-xr-cbK" secondAttribute="bottom" constant="172" id="zUJ-l1-zMO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hPu-BC-Rqa"/>
@@ -155,6 +165,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="tEN-tv-fWt"/>
         <segue reference="hf2-z8-XuM"/>
         <segue reference="iHS-x7-QQX"/>
     </inferredMetricsTieBreakers>
