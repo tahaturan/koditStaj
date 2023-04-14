@@ -14,6 +14,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func goto2(_ sender: Any) {
+        
+        let stroyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let gidilecekViewController = stroyBoard.instantiateViewController(withIdentifier: "sayfa2") as! ViewController2
+        
+        navigationController?.pushViewController(gidilecekViewController, animated: true)
+    }
+    
 }
 

@@ -24,5 +24,14 @@ class ViewController2: UIViewController {
         // en bastaki sayfaya gider
     }
     
+    
+    @IBAction func goto3(_ sender: Any) {
+        let stroyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let gidilecekViewController = stroyBoard.instantiateViewController(withIdentifier: "sayfa3") as! ViewController3
+        
+        navigationController?.pushViewController(gidilecekViewController, animated: true)
+    }
+    
 
 }
