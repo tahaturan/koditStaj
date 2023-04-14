@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EJl-1x-eQp">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNJ-NF-PAC">
-                                <rect key="frame" x="161.66666666666666" y="134" width="70" height="120"/>
+                                <rect key="frame" x="161.66666666666666" y="178" width="70" height="120"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Veri" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y6C-jN-3TF">
-                                <rect key="frame" x="80" y="376" width="233" height="34"/>
+                                <rect key="frame" x="80" y="420" width="233" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHi-gx-NiP">
-                                <rect key="frame" x="156" y="490" width="81" height="35"/>
+                                <rect key="frame" x="156" y="534" width="81" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Gonder"/>
                                 <connections>
@@ -49,13 +49,14 @@
                             <constraint firstItem="zHi-gx-NiP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rcW-Zr-M1a"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Iv3-z8-vZP"/>
                     <connections>
                         <outlet property="myTextField" destination="y6C-jN-3TF" id="dVM-4M-RNk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-27"/>
+            <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
         </scene>
         <!--View ControllerB-->
         <scene sceneID="6tn-cu-uy8">
@@ -77,23 +78,60 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60Y-PG-e9s">
+                                <rect key="frame" x="186" y="416" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W6-Ut-IXJ">
+                                <rect key="frame" x="189" y="454" width="15" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ztT-38-1Wn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2q5-Cw-Edk" firstAttribute="centerX" secondItem="df5-N8-lY2" secondAttribute="centerX" id="D7t-3q-4Gj"/>
                             <constraint firstItem="Fdi-LE-ajt" firstAttribute="centerX" secondItem="df5-N8-lY2" secondAttribute="centerX" id="DSl-IW-WGh"/>
+                            <constraint firstItem="4W6-Ut-IXJ" firstAttribute="centerX" secondItem="df5-N8-lY2" secondAttribute="centerX" id="QeV-NU-v5s"/>
+                            <constraint firstItem="60Y-PG-e9s" firstAttribute="centerX" secondItem="df5-N8-lY2" secondAttribute="centerX" id="S25-eO-eK1"/>
                             <constraint firstItem="Fdi-LE-ajt" firstAttribute="top" secondItem="ztT-38-1Wn" secondAttribute="top" constant="106" id="Yku-OI-Le1"/>
+                            <constraint firstItem="4W6-Ut-IXJ" firstAttribute="top" secondItem="60Y-PG-e9s" secondAttribute="bottom" constant="17" id="b2U-mv-i9S"/>
+                            <constraint firstItem="60Y-PG-e9s" firstAttribute="top" secondItem="Fdi-LE-ajt" secondAttribute="bottom" constant="131" id="dYP-DO-lOl"/>
+                            <constraint firstItem="4W6-Ut-IXJ" firstAttribute="top" secondItem="60Y-PG-e9s" secondAttribute="bottom" constant="17" id="gg6-pQ-JqV"/>
                             <constraint firstItem="2q5-Cw-Edk" firstAttribute="top" secondItem="Fdi-LE-ajt" secondAttribute="bottom" constant="82" id="zre-o6-fYM"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ad" destination="60Y-PG-e9s" id="ma3-4V-RLa"/>
+                        <outlet property="id" destination="4W6-Ut-IXJ" id="VPK-Yt-9Uk"/>
                         <outlet property="messageLabel" destination="2q5-Cw-Edk" id="qMm-47-9Iu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TR1-0m-jHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839" y="-27"/>
+            <point key="canvasLocation" x="1765.6488549618321" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1f6-MS-U29">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EJl-1x-eQp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UDl-Hy-C01">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ii7-aQ-1fN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7aR-8g-PJG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>

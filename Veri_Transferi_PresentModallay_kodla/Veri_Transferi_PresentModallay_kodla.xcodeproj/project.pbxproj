@@ -14,6 +14,7 @@
 		5F18563229E97F05002B8F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F18563129E97F05002B8F3F /* Assets.xcassets */; };
 		5F18563529E97F05002B8F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F18563329E97F05002B8F3F /* LaunchScreen.storyboard */; };
 		5F18563D29E98134002B8F3F /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18563C29E98134002B8F3F /* ViewControllerB.swift */; };
+		5F18563F29E98C44002B8F3F /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F18563E29E98C44002B8F3F /* Kisiler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5F18563429E97F05002B8F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F18563629E97F05002B8F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F18563C29E98134002B8F3F /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		5F18563E29E98C44002B8F3F /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				5F18563329E97F05002B8F3F /* LaunchScreen.storyboard */,
 				5F18563629E97F05002B8F3F /* Info.plist */,
 				5F18563C29E98134002B8F3F /* ViewControllerB.swift */,
+				5F18563E29E98C44002B8F3F /* Kisiler.swift */,
 			);
 			path = Veri_Transferi_PresentModallay_kodla;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				5F18563D29E98134002B8F3F /* ViewControllerB.swift in Sources */,
 				5F18562929E97F04002B8F3F /* AppDelegate.swift in Sources */,
 				5F18562B29E97F04002B8F3F /* SceneDelegate.swift in Sources */,
+				5F18563F29E98C44002B8F3F /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

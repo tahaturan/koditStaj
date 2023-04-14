@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myTextField: UITextField!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,10 +25,12 @@ class ViewController: UIViewController {
         
         if let temp = gidilecekSayfa {
             temp.message = myTextField.text
-            self.present(temp, animated: true)
+            //self.present(temp, animated: true) //Modal gecis
+            temp.kisi = Kisiler(kisiId: 1, kisiAd: "Taha")
+            
+            self.navigationController?.pushViewController(temp, animated: true)
         }
     }
     
-
+    
 }
-
