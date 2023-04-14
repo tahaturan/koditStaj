@@ -61,6 +61,14 @@
                                     <segue destination="bbF-Sy-nIf" kind="presentation" id="Teb-lR-4Lt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fru-QS-qkY">
+                                <rect key="frame" x="155" y="576" width="83.333333333333314" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Dismiss"/>
+                                <connections>
+                                    <action selector="tiklanDismiss:" destination="0xw-ij-y4n" eventType="touchUpInside" id="3Pi-wA-lxW"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpc-ib-POr">
                                 <rect key="frame" x="168.33333333333334" y="82" width="56.666666666666657" height="119.66666666666669"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
@@ -71,10 +79,12 @@
                         <viewLayoutGuide key="safeArea" id="zmV-Kz-7Fa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="fru-QS-qkY" firstAttribute="top" secondItem="FUb-mJ-rIT" secondAttribute="bottom" constant="117" id="3Av-6x-XWp"/>
                             <constraint firstItem="FUb-mJ-rIT" firstAttribute="top" secondItem="Xpc-ib-POr" secondAttribute="bottom" constant="222.33000000000001" id="EMw-iV-BIi"/>
                             <constraint firstItem="Xpc-ib-POr" firstAttribute="top" secondItem="zmV-Kz-7Fa" secondAttribute="top" constant="82" id="ItP-Gf-e9g"/>
                             <constraint firstItem="FUb-mJ-rIT" firstAttribute="centerX" secondItem="uTQ-qd-1ig" secondAttribute="centerX" id="Zej-t6-Ls1"/>
                             <constraint firstItem="Xpc-ib-POr" firstAttribute="centerX" secondItem="uTQ-qd-1ig" secondAttribute="centerX" id="c2V-e9-Ywa"/>
+                            <constraint firstItem="fru-QS-qkY" firstAttribute="centerX" secondItem="uTQ-qd-1ig" secondAttribute="centerX" id="zdF-Ja-VYp"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -131,6 +141,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Teb-lR-4Lt"/>
         <segue reference="fY2-FW-xFJ"/>
     </inferredMetricsTieBreakers>
     <resources>

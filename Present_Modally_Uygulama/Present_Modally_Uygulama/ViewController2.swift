@@ -16,6 +16,9 @@ class ViewController2: UIViewController {
     }
     
 
-
+    @IBAction func tiklanDismiss(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
 
 }
