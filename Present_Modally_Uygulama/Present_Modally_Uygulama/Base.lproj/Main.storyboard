@@ -13,19 +13,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Present_Modally_Uygulama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyw-zT-pSk">
-                                <rect key="frame" x="174.33333333333334" y="144" width="44.666666666666657" height="119.66666666666669"/>
+                                <rect key="frame" x="174.33333333333334" y="85" width="44.666666666666657" height="119.66666666666669"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EA5-nS-oDK">
-                                <rect key="frame" x="156.66666666666666" y="488" width="79.666666666666657" height="35"/>
+                                <rect key="frame" x="156.66666666666666" y="429" width="79.666666666666657" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Go to 2"/>
+                                <connections>
+                                    <segue destination="0xw-ij-y4n" kind="presentation" id="tfI-Z0-VFp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -47,16 +50,19 @@
             <objects>
                 <viewController id="0xw-ij-y4n" customClass="ViewController2" customModule="Present_Modally_Uygulama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uTQ-qd-1ig">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUb-mJ-rIT">
-                                <rect key="frame" x="156.33333333333334" y="483" width="80.333333333333343" height="35"/>
+                                <rect key="frame" x="156.33333333333334" y="424" width="80.333333333333343" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Go to 3"/>
+                                <connections>
+                                    <segue destination="bbF-Sy-nIf" kind="presentation" id="Teb-lR-4Lt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpc-ib-POr">
-                                <rect key="frame" x="168.33333333333334" y="141" width="56.666666666666657" height="119.66666666666669"/>
+                                <rect key="frame" x="168.33333333333334" y="82" width="56.666666666666657" height="119.66666666666669"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,24 +87,30 @@
             <objects>
                 <viewController id="bbF-Sy-nIf" customClass="ViewController3" customModule="Present_Modally_Uygulama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q2v-vK-Lc9">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rN8-p9-hX3">
-                                <rect key="frame" x="166.66666666666666" y="130" width="60" height="120"/>
+                                <rect key="frame" x="166.66666666666666" y="71" width="60" height="120"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQz-Km-5uh">
-                                <rect key="frame" x="158" y="474.33333333333331" width="77.333333333333314" height="35"/>
+                                <rect key="frame" x="158" y="415.33333333333331" width="77.333333333333314" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Go to 1"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="OqD-OC-uh1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Go-IX-Hr3">
-                                <rect key="frame" x="156.66666666666666" y="587" width="79.666666666666657" height="35"/>
+                                <rect key="frame" x="156.66666666666666" y="528" width="79.666666666666657" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Go to 2"/>
+                                <connections>
+                                    <segue destination="0xw-ij-y4n" kind="presentation" id="fY2-FW-xFJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j8m-HE-rnc"/>
@@ -115,9 +127,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6pb-WH-TZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1523" y="-27"/>
+            <point key="canvasLocation" x="1676" y="-27"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fY2-FW-xFJ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
