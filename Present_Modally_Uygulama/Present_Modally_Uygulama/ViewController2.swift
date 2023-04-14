@@ -20,5 +20,12 @@ class ViewController2: UIViewController {
         self.dismiss(animated: true)
     }
     
-
+    @IBAction func goTo3(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let gidilecekViewController = storyBoard.instantiateViewController(identifier: "sayfa3") as! ViewController3
+        
+        self.present(gidilecekViewController, animated: true , completion: nil)
+    }
+    
 }
