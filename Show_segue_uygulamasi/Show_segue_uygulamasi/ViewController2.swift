@@ -11,7 +11,7 @@ class ViewController2: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.hidesBackButton = true
+       // self.navigationItem.hidesBackButton = true
         // sayfa gecisi oldugu zaman geri tusunu gizlemek istersek
     }
     
@@ -26,11 +26,11 @@ class ViewController2: UIViewController {
     
     
     @IBAction func goto3(_ sender: Any) {
-        let stroyBoard = UIStoryboard(name: "Main", bundle: nil)
+       /* let stroyBoard = UIStoryboard(name: "Main", bundle: nil)
         
         let gidilecekViewController = stroyBoard.instantiateViewController(withIdentifier: "sayfa3") as! ViewController3
         
-        navigationController?.pushViewController(gidilecekViewController, animated: true)
+        navigationController?.pushViewController(gidilecekViewController, animated: true) */
     }
     
 

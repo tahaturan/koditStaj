@@ -16,11 +16,18 @@ class ViewController: UIViewController {
 
     @IBAction func goto2(_ sender: Any) {
         
-        let stroyBoard = UIStoryboard(name: "Main", bundle: nil)
+       /* let stroyBoard = UIStoryboard(name: "Main", bundle: nil)
         
         let gidilecekViewController = stroyBoard.instantiateViewController(withIdentifier: "sayfa2") as! ViewController2
         
-        navigationController?.pushViewController(gidilecekViewController, animated: true)
+        navigationController?.pushViewController(gidilecekViewController, animated: true) */
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("sayfa 1 den sayfa 2 ye gecis oldu")
+        if segue.identifier == "gofrom1to2"{
+            print("Sayfa 1 den Sayfa 2 ye gecis oldu")
+        }
     }
     
 }
