@@ -28,6 +28,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHi-gx-NiP">
+                                <rect key="frame" x="156" y="490" width="81" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Gonder"/>
+                                <connections>
+                                    <action selector="gonderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKy-Zg-b5s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,18 +44,23 @@
                             <constraint firstItem="y6C-jN-3TF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="U7t-up-Goa"/>
                             <constraint firstItem="LNJ-NF-PAC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z1P-cn-C1i"/>
                             <constraint firstItem="y6C-jN-3TF" firstAttribute="top" secondItem="LNJ-NF-PAC" secondAttribute="bottom" constant="122" id="bBg-pl-Thi"/>
+                            <constraint firstItem="zHi-gx-NiP" firstAttribute="top" secondItem="y6C-jN-3TF" secondAttribute="bottom" constant="80" id="lOR-HU-rlC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y6C-jN-3TF" secondAttribute="trailing" constant="80" id="mAx-cF-uCo"/>
+                            <constraint firstItem="zHi-gx-NiP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rcW-Zr-M1a"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myTextField" destination="y6C-jN-3TF" id="dVM-4M-RNk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--View ControllerB-->
         <scene sceneID="6tn-cu-uy8">
             <objects>
-                <viewController id="Qvp-Lp-WTp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sayfab" id="Qvp-Lp-WTp" customClass="ViewControllerB" customModule="Veri_Transferi_PresentModallay_kodla" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="df5-N8-lY2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,6 +87,9 @@
                             <constraint firstItem="2q5-Cw-Edk" firstAttribute="top" secondItem="Fdi-LE-ajt" secondAttribute="bottom" constant="82" id="zre-o6-fYM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="2q5-Cw-Edk" id="qMm-47-9Iu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TR1-0m-jHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
