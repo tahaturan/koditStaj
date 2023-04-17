@@ -13,6 +13,8 @@
 		5F928C6029ED2F4B00D77DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F928C5E29ED2F4B00D77DAF /* Main.storyboard */; };
 		5F928C6229ED2F4C00D77DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F928C6129ED2F4C00D77DAF /* Assets.xcassets */; };
 		5F928C6529ED2F4C00D77DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F928C6329ED2F4C00D77DAF /* LaunchScreen.storyboard */; };
+		5F928C6D29ED309100D77DAF /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F928C6C29ED309100D77DAF /* ViewControllerB.swift */; };
+		5F928C6F29ED30A200D77DAF /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F928C6E29ED30A200D77DAF /* ViewControllerC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5F928C6129ED2F4C00D77DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F928C6429ED2F4C00D77DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F928C6629ED2F4C00D77DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F928C6C29ED309100D77DAF /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		5F928C6E29ED30A200D77DAF /* ViewControllerC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				5F928C6129ED2F4C00D77DAF /* Assets.xcassets */,
 				5F928C6329ED2F4C00D77DAF /* LaunchScreen.storyboard */,
 				5F928C6629ED2F4C00D77DAF /* Info.plist */,
+				5F928C6C29ED309100D77DAF /* ViewControllerB.swift */,
+				5F928C6E29ED30A200D77DAF /* ViewControllerC.swift */,
 			);
 			path = veriTransferi_StoryBoardSegue;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F928C5D29ED2F4B00D77DAF /* ViewController.swift in Sources */,
+				5F928C6D29ED309100D77DAF /* ViewControllerB.swift in Sources */,
+				5F928C6F29ED30A200D77DAF /* ViewControllerC.swift in Sources */,
 				5F928C5929ED2F4B00D77DAF /* AppDelegate.swift in Sources */,
 				5F928C5B29ED2F4B00D77DAF /* SceneDelegate.swift in Sources */,
 			);
