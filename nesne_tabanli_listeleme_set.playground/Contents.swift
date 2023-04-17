@@ -56,3 +56,5 @@ for o in ogrenciListesi{
 
 
 // boylelikle Numarlari ayni olan nesnelerdden saddecce 1 tanesi aldi
+
+print("deneme")
