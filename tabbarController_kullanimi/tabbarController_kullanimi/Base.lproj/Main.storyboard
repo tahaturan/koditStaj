@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Bir-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tabbarController_kullanimi" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,20 +17,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32S-kw-v4R">
-                                <rect key="frame" x="174" y="132" width="45" height="120"/>
+                                <rect key="frame" x="174" y="176" width="45" height="120"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWu-Vy-BSs">
-                                <rect key="frame" x="80" y="350" width="47" height="35"/>
+                                <rect key="frame" x="80" y="394" width="47" height="35"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
                                 <connections>
                                     <action selector="arttir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R86-PA-VHl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4P-F9-50z">
-                                <rect key="frame" x="246" y="350" width="55" height="35"/>
+                                <rect key="frame" x="246" y="394" width="55" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="xmark.bin" catalog="system"/>
                                 <connections>
@@ -51,11 +51,45 @@
                             <constraint firstItem="e4P-F9-50z" firstAttribute="leading" secondItem="HWu-Vy-BSs" secondAttribute="trailing" constant="119" id="xbK-eb-NDo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bir" image="person.fill" catalog="system" id="3FD-lM-LXa"/>
+                    <navigationItem key="navigationItem" id="aU2-em-y28">
+                        <barButtonItem key="rightBarButtonItem" title="Detay" id="VR8-jB-qIX">
+                            <connections>
+                                <segue destination="Afr-Ol-fT1" kind="show" id="9mc-1P-g5b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="944" y="-395"/>
+            <point key="canvasLocation" x="1869.4656488549617" y="-395.07042253521126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="csr-yJ-aFo">
+            <objects>
+                <viewController id="Afr-Ol-fT1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WoM-a1-wzu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detay " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWh-ld-WEt">
+                                <rect key="frame" x="144.66666666666666" y="403.33333333333331" width="104" height="45.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RQe-gX-eml"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WWh-ld-WEt" firstAttribute="centerY" secondItem="WoM-a1-wzu" secondAttribute="centerY" id="q1S-pe-d8R"/>
+                            <constraint firstItem="WWh-ld-WEt" firstAttribute="centerX" secondItem="WoM-a1-wzu" secondAttribute="centerX" id="uVc-QO-NJ5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VCN-Nu-bN4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJm-dH-bJB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2589" y="-395"/>
         </scene>
         <!--Iki-->
         <scene sceneID="hoa-qc-dHu">
@@ -95,13 +129,32 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="TQW-QX-qtF"/>
+                        <segue destination="URT-4v-JRQ" kind="relationship" relationship="viewControllers" id="TQW-QX-qtF"/>
                         <segue destination="2mh-NB-b9w" kind="relationship" relationship="viewControllers" id="DJi-Os-MC3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDg-cU-2tB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--Bir-->
+        <scene sceneID="e9y-ub-Mkm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="URT-4v-JRQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bir" image="person.fill" catalog="system" id="3FD-lM-LXa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IJg-91-OiL">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QbF-g3-QXo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8K-bT-Idb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942.74809160305335" y="-395.07042253521126"/>
         </scene>
     </scenes>
     <resources>
