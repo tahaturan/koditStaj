@@ -16,11 +16,22 @@ class ViewController: UIViewController {
         
         self.navigationItem.prompt = "aciklama Kod ile"
         self.navigationItem.largeTitleDisplayMode = .automatic */
-        let resim  = UIImage(named: "navBaslik")
+       // let resim  = UIImage(named: "navBaslik")
         
-        self.navigationItem.titleView = UIImageView(image: resim)
+        //self.navigationItem.titleView = UIImageView(image: resim)
     }
 
-
+    @IBAction func segmentedTiklandi(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            print("First Tiklandi")
+        case 1:
+            print("Second Tiklandi")
+        default:
+            break
+        }
+    }
+    
+    
 }
 

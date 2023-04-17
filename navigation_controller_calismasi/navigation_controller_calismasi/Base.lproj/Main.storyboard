@@ -3,12 +3,13 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="navigation_controller_calismasi" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,11 +19,25 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" prompt="Description" largeTitleDisplayMode="never" id="Nne-65-z2q">
+                    <navigationItem key="navigationItem" prompt="Description" largeTitleDisplayMode="never" id="Nne-65-z2q">
+                        <nil key="title"/>
                         <leftBarButtonItems>
                             <barButtonItem title="Item" id="oDg-u2-dUV"/>
                             <barButtonItem title="Item" id="ENx-wU-GqL"/>
                         </leftBarButtonItems>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="FR0-pE-0he">
+                            <rect key="frame" x="131" y="40" width="131" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <segments>
+                                <segment title="" image="navBaslik"/>
+                                <segment title="Second"/>
+                            </segments>
+                            <color key="tintColor" systemColor="linkColor"/>
+                            <connections>
+                                <action selector="segmentedTiklandi:" destination="BYZ-38-t0r" eventType="valueChanged" id="Lz6-GM-ewV"/>
+                            </connections>
+                        </segmentedControl>
                         <rightBarButtonItems>
                             <barButtonItem title="Sil" id="2gq-Mo-kR4"/>
                             <barButtonItem title="Ekle" id="aqH-tW-lad">
@@ -75,6 +90,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="navBaslik" width="24" height="24"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
