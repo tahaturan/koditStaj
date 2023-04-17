@@ -13,6 +13,7 @@
 		5F928CA829ED6F2E00D77DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F928CA629ED6F2E00D77DAF /* Main.storyboard */; };
 		5F928CAA29ED6F2F00D77DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F928CA929ED6F2F00D77DAF /* Assets.xcassets */; };
 		5F928CAD29ED6F2F00D77DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F928CAB29ED6F2F00D77DAF /* LaunchScreen.storyboard */; };
+		5F928CB529ED844000D77DAF /* ViewControllerNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F928CB429ED844000D77DAF /* ViewControllerNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5F928CA929ED6F2F00D77DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F928CAC29ED6F2F00D77DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F928CAE29ED6F2F00D77DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F928CB429ED844000D77DAF /* ViewControllerNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5F928CA929ED6F2F00D77DAF /* Assets.xcassets */,
 				5F928CAB29ED6F2F00D77DAF /* LaunchScreen.storyboard */,
 				5F928CAE29ED6F2F00D77DAF /* Info.plist */,
+				5F928CB429ED844000D77DAF /* ViewControllerNavBar.swift */,
 			);
 			path = navigation_controller_calismasi;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				5F928CA529ED6F2E00D77DAF /* ViewController.swift in Sources */,
 				5F928CA129ED6F2E00D77DAF /* AppDelegate.swift in Sources */,
+				5F928CB529ED844000D77DAF /* ViewControllerNavBar.swift in Sources */,
 				5F928CA329ED6F2E00D77DAF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
