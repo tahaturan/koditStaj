@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         self.navigationItem.title = "baslik Kod Ile"
         
         self.navigationItem.prompt = "aciklama Kod ile"
+        self.navigationItem.largeTitleDisplayMode = .automatic
     }
 
 

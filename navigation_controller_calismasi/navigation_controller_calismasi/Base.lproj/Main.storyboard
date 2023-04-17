@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" prompt="Description" id="Nne-65-z2q">
+                    <navigationItem key="navigationItem" title="Title" prompt="Description" largeTitleDisplayMode="never" id="Nne-65-z2q">
                         <leftBarButtonItems>
                             <barButtonItem title="Item" id="oDg-u2-dUV"/>
                             <barButtonItem title="Item" id="ENx-wU-GqL"/>
@@ -60,8 +60,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vtt-Fw-FyB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MPv-Ox-wY7">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="MPv-Ox-wY7">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
