@@ -22,12 +22,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWu-Vy-BSs">
+                                <rect key="frame" x="80" y="350" width="47" height="35"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="arttir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R86-PA-VHl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4P-F9-50z">
+                                <rect key="frame" x="246" y="350" width="55" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark.bin" catalog="system"/>
+                                <connections>
+                                    <action selector="azalt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSN-4S-SAI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="e4P-F9-50z" firstAttribute="leading" secondItem="HWu-Vy-BSs" secondAttribute="trailing" constant="119" id="020-W7-Eof"/>
+                            <constraint firstItem="HWu-Vy-BSs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="AMK-EM-PYd"/>
+                            <constraint firstItem="HWu-Vy-BSs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="291" id="Okl-jX-Eeu"/>
+                            <constraint firstItem="e4P-F9-50z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="291" id="i5u-Lc-CdV"/>
                             <constraint firstItem="32S-kw-v4R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t8w-DH-yd2"/>
                             <constraint firstItem="32S-kw-v4R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="vqx-JB-Vq3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e4P-F9-50z" secondAttribute="trailing" constant="92" id="wTF-yl-DWY"/>
+                            <constraint firstItem="e4P-F9-50z" firstAttribute="leading" secondItem="HWu-Vy-BSs" secondAttribute="trailing" constant="119" id="xbK-eb-NDo"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bir" image="person.fill" catalog="system" id="3FD-lM-LXa"/>
@@ -58,7 +79,7 @@
                             <constraint firstItem="HBj-wF-J29" firstAttribute="top" secondItem="ntC-CJ-b7e" secondAttribute="top" constant="117" id="Tvj-5x-p0o"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Iki" image="person.2.wave.2.fill" catalog="system" id="fDW-lv-fF3"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Iki" image="person.2.wave.2.fill" catalog="system" id="fDW-lv-fF3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1H0-AB-Eeq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,6 +107,8 @@
     <resources>
         <image name="person.2.wave.2.fill" catalog="system" width="128" height="84"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="xmark.bin" catalog="system" width="128" height="92"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
