@@ -37,14 +37,28 @@
                                     <action selector="buttonWidget:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SE6-b1-BVD"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QGf-R5-br3">
+                                <rect key="frame" x="76" y="500" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="rcT-Ea-jUt"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="QGf-R5-br3" firstAttribute="top" secondItem="oVJ-dU-EZg" secondAttribute="bottom" constant="77.670000000000002" id="0DQ-CY-eGU"/>
                             <constraint firstItem="oVJ-dU-EZg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="A0M-zP-cHE"/>
+                            <constraint firstItem="QGf-R5-br3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="KZv-1R-LEb"/>
                             <constraint firstItem="Rlo-rV-NJZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="S74-CW-Xg2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rlo-rV-NJZ" secondAttribute="trailing" constant="50" id="Wkb-gB-BdY"/>
                             <constraint firstItem="Rlo-rV-NJZ" firstAttribute="top" secondItem="V3p-cq-DVW" secondAttribute="bottom" constant="96" id="dxG-EW-z0W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QGf-R5-br3" secondAttribute="trailing" constant="77" id="lmc-MZ-s4m"/>
                             <constraint firstItem="V3p-cq-DVW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="rSl-PI-TlI"/>
                             <constraint firstItem="oVJ-dU-EZg" firstAttribute="top" secondItem="Rlo-rV-NJZ" secondAttribute="bottom" constant="107" id="tce-Gp-L6g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oVJ-dU-EZg" secondAttribute="trailing" constant="100" id="yCz-V6-CBP"/>
@@ -54,6 +68,7 @@
                     <connections>
                         <outlet property="labelWidget" destination="V3p-cq-DVW" id="BDV-US-bE1"/>
                         <outlet property="textFieldWidget" destination="Rlo-rV-NJZ" id="C7e-2H-9lf"/>
+                        <outlet property="textViewWidget" destination="QGf-R5-br3" id="U6A-mc-R0D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -62,6 +77,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
