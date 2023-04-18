@@ -13,6 +13,8 @@
 		5F928D3329EEEC2E00D77DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F928D3129EEEC2E00D77DAF /* Main.storyboard */; };
 		5F928D3529EEEC2F00D77DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F928D3429EEEC2F00D77DAF /* Assets.xcassets */; };
 		5F928D3829EEEC2F00D77DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F928D3629EEEC2F00D77DAF /* LaunchScreen.storyboard */; };
+		5F928D4229EEED3900D77DAF /* SonucEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F928D4129EEED3900D77DAF /* SonucEkraniVC.swift */; };
+		5F928D4429EEED6100D77DAF /* TahminEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F928D4329EEED6100D77DAF /* TahminEkraniVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5F928D3429EEEC2F00D77DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F928D3729EEEC2F00D77DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F928D3929EEEC2F00D77DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F928D4129EEED3900D77DAF /* SonucEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonucEkraniVC.swift; sourceTree = "<group>"; };
+		5F928D4329EEED6100D77DAF /* TahminEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TahminEkraniVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				5F928D2B29EEEC2E00D77DAF /* AppDelegate.swift */,
 				5F928D2D29EEEC2E00D77DAF /* SceneDelegate.swift */,
 				5F928D2F29EEEC2E00D77DAF /* ViewController.swift */,
+				5F928D4129EEED3900D77DAF /* SonucEkraniVC.swift */,
 				5F928D3129EEEC2E00D77DAF /* Main.storyboard */,
 				5F928D3429EEEC2F00D77DAF /* Assets.xcassets */,
 				5F928D3629EEEC2F00D77DAF /* LaunchScreen.storyboard */,
 				5F928D3929EEEC2F00D77DAF /* Info.plist */,
+				5F928D4329EEED6100D77DAF /* TahminEkraniVC.swift */,
 			);
 			path = sayiTahmin_app;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F928D4229EEED3900D77DAF /* SonucEkraniVC.swift in Sources */,
+				5F928D4429EEED6100D77DAF /* TahminEkraniVC.swift in Sources */,
 				5F928D3029EEEC2E00D77DAF /* ViewController.swift in Sources */,
 				5F928D2C29EEEC2E00D77DAF /* AppDelegate.swift in Sources */,
 				5F928D2E29EEEC2E00D77DAF /* SceneDelegate.swift in Sources */,
