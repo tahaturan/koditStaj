@@ -13,6 +13,7 @@
 		5F928D0A29EEC45100D77DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F928D0829EEC45100D77DAF /* Main.storyboard */; };
 		5F928D0C29EEC45200D77DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F928D0B29EEC45200D77DAF /* Assets.xcassets */; };
 		5F928D0F29EEC45200D77DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F928D0D29EEC45200D77DAF /* LaunchScreen.storyboard */; };
+		5F928D1A29EECEC900D77DAF /* SwitchSegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F928D1929EECEC900D77DAF /* SwitchSegmentedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5F928D0B29EEC45200D77DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F928D0E29EEC45200D77DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F928D1029EEC45200D77DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F928D1929EECEC900D77DAF /* SwitchSegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSegmentedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		5F928D0129EEC45100D77DAF /* Ios_Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				5F928D1629EECE5B00D77DAF /* ViewControllerFolder */,
 				5F928D0229EEC45100D77DAF /* AppDelegate.swift */,
 				5F928D0429EEC45100D77DAF /* SceneDelegate.swift */,
 				5F928D0629EEC45100D77DAF /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				5F928D1029EEC45200D77DAF /* Info.plist */,
 			);
 			path = Ios_Widgets;
+			sourceTree = "<group>";
+		};
+		5F928D1629EECE5B00D77DAF /* ViewControllerFolder */ = {
+			isa = PBXGroup;
+			children = (
+				5F928D1929EECEC900D77DAF /* SwitchSegmentedViewController.swift */,
+			);
+			path = ViewControllerFolder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				5F928D0729EEC45100D77DAF /* ViewController.swift in Sources */,
 				5F928D0329EEC45100D77DAF /* AppDelegate.swift in Sources */,
 				5F928D0529EEC45100D77DAF /* SceneDelegate.swift in Sources */,
+				5F928D1A29EECEC900D77DAF /* SwitchSegmentedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
