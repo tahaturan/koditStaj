@@ -170,9 +170,24 @@
                                 </connections>
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1V-pq-bqw">
-                                <rect key="frame" x="159" y="506" width="75" height="35"/>
+                                <rect key="frame" x="164" y="506" width="65" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Basla"/>
+                                <connections>
+                                    <action selector="indicatorBaslaButton:" destination="UZQ-P7-Jd9" eventType="touchUpInside" id="4l4-9P-QVT"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Pjn-Qy-hNT">
+                                <rect key="frame" x="186.66666666666666" y="583" width="20" height="20"/>
+                                <color key="color" systemColor="systemBrownColor"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3v-sB-JuA">
+                                <rect key="frame" x="170.66666666666666" y="631" width="52" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dur"/>
+                                <connections>
+                                    <action selector="indicatorDurButton:" destination="UZQ-P7-Jd9" eventType="touchUpInside" id="jPt-Y6-H7y"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AAZ-mr-Gev"/>
@@ -181,18 +196,23 @@
                             <constraint firstItem="FLj-r1-Vob" firstAttribute="top" secondItem="kaU-wN-dBk" secondAttribute="bottom" constant="45" id="Bxx-SH-Yf7"/>
                             <constraint firstItem="gXP-YU-deb" firstAttribute="top" secondItem="AAZ-mr-Gev" secondAttribute="top" constant="54" id="FcV-mF-cq1"/>
                             <constraint firstItem="1h3-kc-dc1" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="JKY-DE-BTv"/>
+                            <constraint firstItem="A3v-sB-JuA" firstAttribute="top" secondItem="Pjn-Qy-hNT" secondAttribute="bottom" constant="28" id="Oqz-Es-5u8"/>
                             <constraint firstItem="kaU-wN-dBk" firstAttribute="leading" secondItem="AAZ-mr-Gev" secondAttribute="leading" constant="45" id="aI9-mU-xea"/>
+                            <constraint firstItem="Pjn-Qy-hNT" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="bA6-xE-B76"/>
                             <constraint firstItem="kaU-wN-dBk" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="bNK-tb-W95"/>
                             <constraint firstItem="H1V-pq-bqw" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="fBK-7V-hVC"/>
+                            <constraint firstItem="A3v-sB-JuA" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="h61-dz-bCu"/>
                             <constraint firstItem="1h3-kc-dc1" firstAttribute="top" secondItem="FLj-r1-Vob" secondAttribute="bottom" constant="86" id="i0N-bU-tld"/>
                             <constraint firstItem="kaU-wN-dBk" firstAttribute="top" secondItem="gXP-YU-deb" secondAttribute="bottom" constant="57" id="krb-Qf-abb"/>
                             <constraint firstItem="FLj-r1-Vob" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="lQJ-JV-tTN"/>
                             <constraint firstItem="gXP-YU-deb" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="ldo-QC-KNx"/>
                             <constraint firstItem="AAZ-mr-Gev" firstAttribute="trailing" secondItem="kaU-wN-dBk" secondAttribute="trailing" constant="45" id="rlm-bD-AAb"/>
                             <constraint firstItem="H1V-pq-bqw" firstAttribute="top" secondItem="1h3-kc-dc1" secondAttribute="bottom" constant="101" id="uk0-Lx-nZV"/>
+                            <constraint firstItem="Pjn-Qy-hNT" firstAttribute="top" secondItem="H1V-pq-bqw" secondAttribute="bottom" constant="42" id="x5e-wm-xwj"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="incatorWidget" destination="Pjn-Qy-hNT" id="9KA-eS-UMp"/>
                         <outlet property="sliderDegerLabel" destination="gXP-YU-deb" id="MeS-Nz-2eD"/>
                         <outlet property="sliderWidget" destination="kaU-wN-dBk" id="vXO-C3-ieU"/>
                         <outlet property="stepperDegerLabel" destination="FLj-r1-Vob" id="XeW-e1-YNF"/>
@@ -213,6 +233,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

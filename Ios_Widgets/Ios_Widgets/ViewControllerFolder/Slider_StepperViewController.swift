@@ -15,8 +15,12 @@ class Slider_StepperViewController: UIViewController {
     @IBOutlet weak var stepperDegerLabel: UILabel!
     @IBOutlet weak var stepperWidget: UIStepper!
     
+    @IBOutlet weak var incatorWidget: UIActivityIndicatorView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        incatorWidget.isHidden = true
         
 
     }
@@ -30,6 +34,20 @@ class Slider_StepperViewController: UIViewController {
     @IBAction func stepperWidgetAction(_ sender: UIStepper) {
         stepperDegerLabel.text = String(Int(sender.value))
         print(sender.value)
+    }
+    
+    @IBAction func indicatorBaslaButton(_ sender: Any) {
+        incatorWidget.startAnimating()
+        incatorWidget.isHidden = false
+    }
+    
+    
+    
+    @IBAction func indicatorDurButton(_ sender: Any) {
+        
+        incatorWidget.stopAnimating()
+        incatorWidget.isHidden = true
+        
     }
     
 }
