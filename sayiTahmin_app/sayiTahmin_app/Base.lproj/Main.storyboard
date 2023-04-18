@@ -85,7 +85,16 @@
                                 <state key="normal" title="Tahmin Et">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="tahminButton:" destination="Ieq-UO-qmj" eventType="touchUpInside" id="J5b-rV-yyW"/>
+                                </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arttir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2br-WC-NSh">
+                                <rect key="frame" x="164" y="575" width="65" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kalan Tahmin Hakki:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw8-PH-rY3">
                                 <rect key="frame" x="89" y="128" width="215" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -98,6 +107,7 @@
                         <constraints>
                             <constraint firstItem="t3Q-Bt-UEa" firstAttribute="trailing" secondItem="Z1h-xL-3fz" secondAttribute="trailing" constant="80" id="0QN-dE-3ob"/>
                             <constraint firstItem="Zw8-PH-rY3" firstAttribute="centerX" secondItem="PI5-KW-kSB" secondAttribute="centerX" id="8P9-P0-AYl"/>
+                            <constraint firstItem="2br-WC-NSh" firstAttribute="top" secondItem="Z1h-xL-3fz" secondAttribute="bottom" constant="69" id="Hxf-mC-P6U"/>
                             <constraint firstItem="Zw8-PH-rY3" firstAttribute="top" secondItem="t3Q-Bt-UEa" secondAttribute="top" constant="25" id="MBY-7v-1Rg"/>
                             <constraint firstItem="gUh-un-Ig7" firstAttribute="top" secondItem="Zw8-PH-rY3" secondAttribute="bottom" constant="227" id="MT1-sm-6oS"/>
                             <constraint firstItem="Z1h-xL-3fz" firstAttribute="top" secondItem="gUh-un-Ig7" secondAttribute="bottom" constant="29" id="NzM-ii-kHX"/>
@@ -105,12 +115,16 @@
                             <constraint firstItem="Z1h-xL-3fz" firstAttribute="leading" secondItem="t3Q-Bt-UEa" secondAttribute="leading" constant="80" id="WIb-4W-xeF"/>
                             <constraint firstItem="t3Q-Bt-UEa" firstAttribute="trailing" secondItem="gUh-un-Ig7" secondAttribute="trailing" constant="80" id="WdS-Bx-Oxv"/>
                             <constraint firstItem="Z1h-xL-3fz" firstAttribute="top" secondItem="gUh-un-Ig7" secondAttribute="bottom" constant="29" id="Yts-v0-ZyL"/>
+                            <constraint firstItem="2br-WC-NSh" firstAttribute="centerX" secondItem="PI5-KW-kSB" secondAttribute="centerX" id="jb9-W2-xtO"/>
                             <constraint firstItem="t3Q-Bt-UEa" firstAttribute="trailing" secondItem="Z1h-xL-3fz" secondAttribute="trailing" constant="80" id="rve-Cr-Tet"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tahmin Ekrani" id="aTC-26-BU6"/>
                     <connections>
-                        <segue destination="VEZ-U5-Vui" kind="show" id="82d-52-JCK"/>
+                        <outlet property="girdiTextField" destination="gUh-un-Ig7" id="usR-kj-4OB"/>
+                        <outlet property="ipUcuLabel" destination="2br-WC-NSh" id="IPq-fk-xYu"/>
+                        <outlet property="kalanHakLabel" destination="Zw8-PH-rY3" id="2X1-Px-ByZ"/>
+                        <segue destination="VEZ-U5-Vui" kind="show" identifier="tahminToSonuc" id="82d-52-JCK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPR-fv-3Si" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -132,13 +146,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwe-du-1Ws">
-                                <rect key="frame" x="109" y="590" width="175" height="48"/>
+                                <rect key="frame" x="62" y="590" width="269" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Oyuna Basla">
+                                <state key="normal" title="Tekrar Oyuna Basla">
                                     <color key="titleColor" name="AccentColor"/>
                                     <color key="titleShadowColor" systemColor="systemIndigoColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="tekrarButton:" destination="VEZ-U5-Vui" eventType="touchUpInside" id="npI-T0-H8x"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mulu_resim" translatesAutoresizingMaskIntoConstraints="NO" id="xwZ-mN-0q8">
                                 <rect key="frame" x="49.666666666666657" y="137" width="294" height="201"/>
@@ -160,6 +177,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sonuc Ekrani" id="2zc-xx-qqC"/>
+                    <connections>
+                        <outlet property="imageViewSonuc" destination="xwZ-mN-0q8" id="rn2-Zz-PHg"/>
+                        <outlet property="sonucLabel" destination="WEr-to-IWg" id="NOi-jh-3i8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYV-Cs-2Yj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,6 +219,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
