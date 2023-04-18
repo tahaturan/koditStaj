@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y6z-tQ-rEg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UZQ-P7-Jd9">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -133,6 +133,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZa-bc-xX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="811" y="-27"/>
+        </scene>
+        <!--Slider Stepper View Controller-->
+        <scene sceneID="WGH-iE-jIp">
+            <objects>
+                <viewController id="UZQ-P7-Jd9" customClass="Slider_StepperViewController" customModule="Ios_Widgets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aRe-1b-Ebm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slider:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXP-YU-deb">
+                                <rect key="frame" x="172.66666666666666" y="113" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="kaU-wN-dBk">
+                                <rect key="frame" x="43" y="191" width="307" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" systemColor="systemGreenColor"/>
+                                <color key="thumbTintColor" systemColor="linkColor"/>
+                                <connections>
+                                    <action selector="sliderWidgetAction:" destination="UZQ-P7-Jd9" eventType="valueChanged" id="hNV-I9-DZ9"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stepper:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLj-r1-Vob">
+                                <rect key="frame" x="163.66666666666666" y="266" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1h3-kc-dc1">
+                                <rect key="frame" x="149.66666666666666" y="373" width="94" height="32"/>
+                                <connections>
+                                    <action selector="stepperWidgetAction:" destination="UZQ-P7-Jd9" eventType="valueChanged" id="g5V-5C-vNH"/>
+                                </connections>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1V-pq-bqw">
+                                <rect key="frame" x="159" y="506" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AAZ-mr-Gev"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FLj-r1-Vob" firstAttribute="top" secondItem="kaU-wN-dBk" secondAttribute="bottom" constant="45" id="Bxx-SH-Yf7"/>
+                            <constraint firstItem="gXP-YU-deb" firstAttribute="top" secondItem="AAZ-mr-Gev" secondAttribute="top" constant="54" id="FcV-mF-cq1"/>
+                            <constraint firstItem="1h3-kc-dc1" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="JKY-DE-BTv"/>
+                            <constraint firstItem="kaU-wN-dBk" firstAttribute="leading" secondItem="AAZ-mr-Gev" secondAttribute="leading" constant="45" id="aI9-mU-xea"/>
+                            <constraint firstItem="kaU-wN-dBk" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="bNK-tb-W95"/>
+                            <constraint firstItem="H1V-pq-bqw" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="fBK-7V-hVC"/>
+                            <constraint firstItem="1h3-kc-dc1" firstAttribute="top" secondItem="FLj-r1-Vob" secondAttribute="bottom" constant="86" id="i0N-bU-tld"/>
+                            <constraint firstItem="kaU-wN-dBk" firstAttribute="top" secondItem="gXP-YU-deb" secondAttribute="bottom" constant="57" id="krb-Qf-abb"/>
+                            <constraint firstItem="FLj-r1-Vob" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="lQJ-JV-tTN"/>
+                            <constraint firstItem="gXP-YU-deb" firstAttribute="centerX" secondItem="aRe-1b-Ebm" secondAttribute="centerX" id="ldo-QC-KNx"/>
+                            <constraint firstItem="AAZ-mr-Gev" firstAttribute="trailing" secondItem="kaU-wN-dBk" secondAttribute="trailing" constant="45" id="rlm-bD-AAb"/>
+                            <constraint firstItem="H1V-pq-bqw" firstAttribute="top" secondItem="1h3-kc-dc1" secondAttribute="bottom" constant="101" id="uk0-Lx-nZV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sliderDegerLabel" destination="gXP-YU-deb" id="MeS-Nz-2eD"/>
+                        <outlet property="sliderWidget" destination="kaU-wN-dBk" id="vXO-C3-ieU"/>
+                        <outlet property="stepperDegerLabel" destination="FLj-r1-Vob" id="XeW-e1-YNF"/>
+                        <outlet property="stepperWidget" destination="1h3-kc-dc1" id="ic7-gI-HsR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiS-0U-Xkr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541" y="-27"/>
         </scene>
     </scenes>
     <resources>
