@@ -8,12 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var labelWidget: UILabel!
+    
+    @IBOutlet weak var textFieldWidget: UITextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonWidget(_ sender: Any) {
+        if let temp = textFieldWidget.text {
+            labelWidget.text = temp
+        }
+    }
+    
 }
 
