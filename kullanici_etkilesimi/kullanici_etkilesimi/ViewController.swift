@@ -8,12 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var labelSonuc: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func basitAlertGoster(_ sender: Any) {
+    }
+    
+    
+    @IBAction func ozelAlertGoster(_ sender: Any) {
+    }
+    
+    
+    
+    @IBAction func actionSheetGoster(_ sender: Any) {
+    }
+    
 }
 
