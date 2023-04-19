@@ -42,6 +42,20 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("secilen ulke: \(ulkeler[indexPath.row])")
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let silAction = UIContextualAction(style: .normal, title: "Sil", handler: {
+            (contexualAction , view , boolValue) in
+            print("\(self.ulkeler[indexPath.row]) yi sil")
+        })
+        
+        let duzenleAction = UIContextualAction(style: .destructive, title: "Duzenle", handler: {
+            (contexualAction , view , boolValue) in
+            print("\(self.ulkeler[indexPath.row]) i duzenle")
+        })
+       return UISwipeActionsConfiguration(actions: [silAction , duzenleAction])
+    }
 
 
 }
