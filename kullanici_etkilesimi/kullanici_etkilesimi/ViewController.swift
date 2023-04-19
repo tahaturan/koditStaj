@@ -87,6 +87,19 @@ class ViewController: UIViewController {
     
     
     @IBAction func actionSheetGoster(_ sender: Any) {
+        let sheetAlertController = UIAlertController(title: "Baslik", message: "Mesaj", preferredStyle: .actionSheet)
+        
+        let iptalAction = UIAlertAction(title: "Iptal", style: .cancel) { action in
+            print("Iptal Edildi")
+        }
+        
+        sheetAlertController.addAction(iptalAction)
+        
+        let tamamAction = UIAlertAction(title: "Tamam", style: .destructive) { action in
+            print("Islem Tamam")
+        }
+        sheetAlertController.addAction(tamamAction)
+        self.present(sheetAlertController, animated: true)
     }
     
 }
