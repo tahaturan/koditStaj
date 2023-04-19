@@ -52,7 +52,10 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         
     }
     
-   
+
+    @IBAction func sonrakiSayfaButton(_ sender: Any) {
+        performSegue(withIdentifier: "pickerViewPage", sender: nil)
+    }
     
 
 }
