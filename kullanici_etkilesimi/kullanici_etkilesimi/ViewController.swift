@@ -18,6 +18,24 @@ class ViewController: UIViewController {
     }
 
     @IBAction func basitAlertGoster(_ sender: Any) {
+        
+        let alertController = UIAlertController(title: "Baslik", message: "Mesaj", preferredStyle: .alert)
+        
+        let iptalAction = UIAlertAction(title: "Iptal", style: .cancel){
+            action in
+            print("Iptal Tiklandi")
+        }
+        
+        alertController.addAction(iptalAction)
+        
+        let tamamAction = UIAlertAction(title: "Tamam", style: .destructive){
+            action in
+            print("Tamam Tiklandi")
+        }
+        
+        alertController.addAction(tamamAction)
+        
+        self.present(alertController, animated: true)
     }
     
     
