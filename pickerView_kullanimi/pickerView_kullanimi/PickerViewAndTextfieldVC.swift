@@ -25,6 +25,16 @@ class PickerViewAndTextfieldVC: UIViewController, UIPickerViewDelegate, UIPicker
         
         textFieldUlke.inputView = picerView
         
+        let toolBar = UIToolbar()
+        toolBar.tintColor = .gray
+        toolBar.sizeToFit()
+        
+        let tamamButton = UIBarButtonItem(title: "Tamam", style: .done, target: self, action: #selector(self.tamamTikla))
+        let bosluk = UIBarButtonItem(systemItem: .flexibleSpace)
+        let iptalButton = UIBarButtonItem(title: "Iptal", style: .plain, target: self, action: #selector(self.iptalTikla))
+        
+        toolBar.setItems([iptalButton , bosluk, tamamButton], animated: true)
+        textFieldUlke.inputAccessoryView = toolBar
         
     }
     
@@ -43,6 +53,18 @@ class PickerViewAndTextfieldVC: UIViewController, UIPickerViewDelegate, UIPicker
         textFieldUlke.text = ulkeler[row]
     }
 
+    
+   @objc func tamamTikla()  {
+       textFieldUlke.text = ""
+     
+       view.endEditing(true)
+    }
+    
+   @objc func iptalTikla()  {
+       textFieldUlke.text = ""
+    
+       view.endEditing(true)
+    }
 
 
 }
