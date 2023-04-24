@@ -13,6 +13,8 @@
 		5F2B524129F6ABF800901344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B523F29F6ABF800901344 /* Main.storyboard */; };
 		5F2B524329F6ABF900901344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B524229F6ABF900901344 /* Assets.xcassets */; };
 		5F2B524629F6ABF900901344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B524429F6ABF900901344 /* LaunchScreen.storyboard */; };
+		5F2B524E29F6ACEA00901344 /* TableViewHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B524D29F6ACEA00901344 /* TableViewHucre.swift */; };
+		5F2B525029F6AD7600901344 /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B524F29F6AD7600901344 /* Kisiler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5F2B524229F6ABF900901344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F2B524529F6ABF900901344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F2B524729F6ABF900901344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F2B524D29F6ACEA00901344 /* TableViewHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHucre.swift; sourceTree = "<group>"; };
+		5F2B524F29F6AD7600901344 /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				5F2B524229F6ABF900901344 /* Assets.xcassets */,
 				5F2B524429F6ABF900901344 /* LaunchScreen.storyboard */,
 				5F2B524729F6ABF900901344 /* Info.plist */,
+				5F2B524D29F6ACEA00901344 /* TableViewHucre.swift */,
+				5F2B524F29F6AD7600901344 /* Kisiler.swift */,
 			);
 			path = CustomCell_TableView_Kullanimi;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F2B523E29F6ABF800901344 /* ViewController.swift in Sources */,
+				5F2B524E29F6ACEA00901344 /* TableViewHucre.swift in Sources */,
 				5F2B523A29F6ABF800901344 /* AppDelegate.swift in Sources */,
 				5F2B523C29F6ABF800901344 /* SceneDelegate.swift in Sources */,
+				5F2B525029F6AD7600901344 /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
