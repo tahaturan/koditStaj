@@ -13,6 +13,8 @@
 		5F2B521629F674DB00901344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B521429F674DB00901344 /* Main.storyboard */; };
 		5F2B521829F674DC00901344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B521729F674DC00901344 /* Assets.xcassets */; };
 		5F2B521B29F674DC00901344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B521929F674DC00901344 /* LaunchScreen.storyboard */; };
+		5F2B522429F6768400901344 /* aplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B522329F6768400901344 /* aplicationConstants.swift */; };
+		5F2B522729F6770C00901344 /* mainViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B522629F6770C00901344 /* mainViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5F2B521729F674DC00901344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F2B521A29F674DC00901344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F2B521C29F674DC00901344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F2B522329F6768400901344 /* aplicationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aplicationConstants.swift; sourceTree = "<group>"; };
+		5F2B522629F6770C00901344 /* mainViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		5F2B520D29F674DB00901344 /* Coklu_TableView */ = {
 			isa = PBXGroup;
 			children = (
+				5F2B522529F676EF00901344 /* extensions */,
+				5F2B522229F6765C00901344 /* constants */,
 				5F2B520E29F674DB00901344 /* AppDelegate.swift */,
 				5F2B521029F674DB00901344 /* SceneDelegate.swift */,
 				5F2B521229F674DB00901344 /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				5F2B521C29F674DC00901344 /* Info.plist */,
 			);
 			path = Coklu_TableView;
+			sourceTree = "<group>";
+		};
+		5F2B522229F6765C00901344 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				5F2B522329F6768400901344 /* aplicationConstants.swift */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		5F2B522529F676EF00901344 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5F2B522629F6770C00901344 /* mainViewControllerExtension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F2B521329F674DB00901344 /* ViewController.swift in Sources */,
+				5F2B522429F6768400901344 /* aplicationConstants.swift in Sources */,
 				5F2B520F29F674DB00901344 /* AppDelegate.swift in Sources */,
 				5F2B521129F674DB00901344 /* SceneDelegate.swift in Sources */,
+				5F2B522729F6770C00901344 /* mainViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
