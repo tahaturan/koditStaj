@@ -69,6 +69,46 @@
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
+        <!--Cok Bolumlu Table ViewVC-->
+        <scene sceneID="JcD-yN-z8P">
+            <objects>
+                <viewController id="Jec-Um-bjG" customClass="CokBolumluTableViewVC" customModule="Coklu_TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gyO-N3-iqL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UQg-Vd-pxR">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="hucreAdi" id="X8u-9y-Ddc">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X8u-9y-Ddc" id="nqJ-yT-HJp">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xcg-Rp-4Zn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UQg-Vd-pxR" firstAttribute="top" secondItem="xcg-Rp-4Zn" secondAttribute="top" id="9eK-NW-yLF"/>
+                            <constraint firstItem="UQg-Vd-pxR" firstAttribute="leading" secondItem="xcg-Rp-4Zn" secondAttribute="leading" id="gkF-rQ-KuF"/>
+                            <constraint firstItem="xcg-Rp-4Zn" firstAttribute="bottom" secondItem="UQg-Vd-pxR" secondAttribute="bottom" id="wKB-Wx-qIz"/>
+                            <constraint firstItem="xcg-Rp-4Zn" firstAttribute="trailing" secondItem="UQg-Vd-pxR" secondAttribute="trailing" id="zie-cx-h4c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="UQg-Vd-pxR" id="TXi-cv-m5W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsB-j1-NHl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005" y="-37"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

@@ -15,6 +15,8 @@
 		5F2B521B29F674DC00901344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B521929F674DC00901344 /* LaunchScreen.storyboard */; };
 		5F2B522429F6768400901344 /* aplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B522329F6768400901344 /* aplicationConstants.swift */; };
 		5F2B522729F6770C00901344 /* mainViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B522629F6770C00901344 /* mainViewControllerExtension.swift */; };
+		5F2B522A29F69E2800901344 /* CokBolumluTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B522929F69E2800901344 /* CokBolumluTableViewVC.swift */; };
+		5F2B522C29F6A0BE00901344 /* CokBolumluTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B522B29F6A0BE00901344 /* CokBolumluTableViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		5F2B521C29F674DC00901344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F2B522329F6768400901344 /* aplicationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aplicationConstants.swift; sourceTree = "<group>"; };
 		5F2B522629F6770C00901344 /* mainViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewControllerExtension.swift; sourceTree = "<group>"; };
+		5F2B522929F69E2800901344 /* CokBolumluTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CokBolumluTableViewVC.swift; sourceTree = "<group>"; };
+		5F2B522B29F6A0BE00901344 /* CokBolumluTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CokBolumluTableViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +64,11 @@
 		5F2B520D29F674DB00901344 /* Coklu_TableView */ = {
 			isa = PBXGroup;
 			children = (
+				5F2B522829F69DFC00901344 /* ViewControllers */,
 				5F2B522529F676EF00901344 /* extensions */,
 				5F2B522229F6765C00901344 /* constants */,
 				5F2B520E29F674DB00901344 /* AppDelegate.swift */,
 				5F2B521029F674DB00901344 /* SceneDelegate.swift */,
-				5F2B521229F674DB00901344 /* ViewController.swift */,
 				5F2B521429F674DB00901344 /* Main.storyboard */,
 				5F2B521729F674DC00901344 /* Assets.xcassets */,
 				5F2B521929F674DC00901344 /* LaunchScreen.storyboard */,
@@ -85,8 +89,18 @@
 			isa = PBXGroup;
 			children = (
 				5F2B522629F6770C00901344 /* mainViewControllerExtension.swift */,
+				5F2B522B29F6A0BE00901344 /* CokBolumluTableViewExtension.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		5F2B522829F69DFC00901344 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F2B521229F674DB00901344 /* ViewController.swift */,
+				5F2B522929F69E2800901344 /* CokBolumluTableViewVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,10 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F2B521329F674DB00901344 /* ViewController.swift in Sources */,
+				5F2B522C29F6A0BE00901344 /* CokBolumluTableViewExtension.swift in Sources */,
 				5F2B522429F6768400901344 /* aplicationConstants.swift in Sources */,
 				5F2B520F29F674DB00901344 /* AppDelegate.swift in Sources */,
 				5F2B521129F674DB00901344 /* SceneDelegate.swift in Sources */,
 				5F2B522729F6770C00901344 /* mainViewControllerExtension.swift in Sources */,
+				5F2B522A29F69E2800901344 /* CokBolumluTableViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
