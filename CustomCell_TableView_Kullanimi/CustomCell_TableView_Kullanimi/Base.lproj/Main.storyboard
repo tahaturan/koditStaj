@@ -28,15 +28,32 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPO-Wz-fLZ">
-                                                    <rect key="frame" x="161" y="27" width="71" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <rect key="frame" x="20" y="32" width="48" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="ujM-5Q-o6K"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" systemColor="linkColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWY-Ns-fkz">
+                                                    <rect key="frame" x="90" y="28" width="282.66666666666669" height="35"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Tikla"/>
+                                                    <connections>
+                                                        <action selector="tiklaButton:" destination="HNa-VG-C1E" eventType="touchUpInside" id="5UI-CP-wXO"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="bPO-Wz-fLZ" firstAttribute="centerX" secondItem="c0B-57-DSl" secondAttribute="centerX" id="1SF-9e-KN8"/>
-                                                <constraint firstItem="bPO-Wz-fLZ" firstAttribute="centerY" secondItem="c0B-57-DSl" secondAttribute="centerY" id="Ixr-gO-0to"/>
+                                                <constraint firstItem="bPO-Wz-fLZ" firstAttribute="top" secondItem="c0B-57-DSl" secondAttribute="topMargin" constant="21" id="044-We-QFq"/>
+                                                <constraint firstItem="CWY-Ns-fkz" firstAttribute="top" secondItem="c0B-57-DSl" secondAttribute="topMargin" constant="17" id="3Bk-Bc-tgv"/>
+                                                <constraint firstItem="CWY-Ns-fkz" firstAttribute="leading" secondItem="bPO-Wz-fLZ" secondAttribute="trailing" constant="22" id="4no-PD-tRq"/>
+                                                <constraint firstItem="bPO-Wz-fLZ" firstAttribute="leading" secondItem="c0B-57-DSl" secondAttribute="leadingMargin" id="JbC-F2-c7d"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="bPO-Wz-fLZ" secondAttribute="bottom" constant="23" id="VnU-qB-vUL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="CWY-Ns-fkz" secondAttribute="bottom" constant="16" id="a97-ph-Kd2"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CWY-Ns-fkz" secondAttribute="trailing" constant="0.33000000000000002" id="hvf-on-6g0"/>
+                                                <constraint firstItem="CWY-Ns-fkz" firstAttribute="leading" secondItem="bPO-Wz-fLZ" secondAttribute="trailing" constant="22" id="u0g-IN-KgV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -61,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-27"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>

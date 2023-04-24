@@ -40,7 +40,11 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController : UITableViewDelegate , UITableViewDataSource{
+extension ViewController : UITableViewDelegate , UITableViewDataSource , TableViewHucreProtocol{
+    func hucreUzerindekiButtonTiklandi(indexPath: IndexPath) {
+        print("button Tiklandi \(kisilerListe[indexPath.row].kisiAd ?? "")")
+    }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -57,6 +61,9 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "kisilerHucre", for: indexPath) as! TableViewHucre
         
         cell.kisiAdLabel.text = "\(gelenKisi.kisiAd ?? "") - \(gelenKisi.kisiTel ?? "")"
+        
+        cell.hucreProtocol = self
+        cell.indexPath = indexPath
         
         return cell
         

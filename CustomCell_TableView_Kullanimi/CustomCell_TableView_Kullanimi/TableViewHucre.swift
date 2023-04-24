@@ -7,10 +7,17 @@
 
 import UIKit
 
+protocol TableViewHucreProtocol {
+    func hucreUzerindekiButtonTiklandi(indexPath:IndexPath)
+}
+
 class TableViewHucre: UITableViewCell {
     
     
     @IBOutlet weak var kisiAdLabel: UILabel!
+    
+    var hucreProtocol : TableViewHucreProtocol?
+    var indexPath:IndexPath?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +29,10 @@ class TableViewHucre: UITableViewCell {
 
         
     }
+    
+    @IBAction func tiklaButton(_ sender: Any) {
+        hucreProtocol?.hucreUzerindekiButtonTiklandi(indexPath: indexPath!)
+    }
+    
 
 }
