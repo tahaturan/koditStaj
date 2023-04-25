@@ -27,10 +27,21 @@ class HomePageViewController: UIViewController {
     
     @IBAction func cikisYapButton(_ sender: Any) {
         
-        d.removeObject(forKey: "kullaniciAdi")
-        d.removeObject(forKey: "sifre")
+        let alert = UIAlertController(title: "Uyari", message: "Cikis Yapmak Istediginize Emin misiniz?", preferredStyle: UIAlertController.Style.alert)
         
-        exit(-1)
+        let okButton = UIAlertAction(title: "Tamam", style: .default) { UIAlertAction in
+            self.d.removeObject(forKey: "kullaniciAdi")
+            self.d.removeObject(forKey: "sifre")
+            
+            exit(-1)
+        }
+        
+        let cancelButton = UIAlertAction(title: "Iptal", style: .cancel)
+        
+        alert.addAction(okButton)
+        alert.addAction(cancelButton)
+        
+        self.present(alert, animated: true)
     }
     
 
