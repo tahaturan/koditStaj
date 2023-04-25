@@ -28,17 +28,36 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="DsS-pd-jxB"/>
                                 </connections>
                             </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MUd-bi-XRj">
+                                <rect key="frame" x="0.0" y="115" width="393" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ulkelerHucre" id="bGh-ET-cTH">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bGh-ET-cTH" id="eFR-dl-rhb">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="e44-Mh-98l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4d7-5T-YRk"/>
+                            <constraint firstItem="MUd-bi-XRj" firstAttribute="top" secondItem="e44-Mh-98l" secondAttribute="bottom" id="6pz-Ta-Ry8"/>
+                            <constraint firstItem="MUd-bi-XRj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Aho-S5-qSJ"/>
                             <constraint firstItem="e44-Mh-98l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GUQ-L2-7Q8"/>
                             <constraint firstItem="e44-Mh-98l" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NhP-9a-bw7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MUd-bi-XRj" secondAttribute="bottom" id="Tml-go-rCK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MUd-bi-XRj" secondAttribute="trailing" id="U1K-Pj-pdF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="e44-Mh-98l" id="MIY-47-eAq"/>
+                        <outlet property="tableView" destination="MUd-bi-XRj" id="yaJ-AU-qzn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
