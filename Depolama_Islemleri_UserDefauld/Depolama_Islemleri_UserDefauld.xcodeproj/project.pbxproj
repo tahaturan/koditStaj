@@ -13,6 +13,7 @@
 		5F4358E829F7F48F0057240E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4358E629F7F48F0057240E /* Main.storyboard */; };
 		5F4358EA29F7F4900057240E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4358E929F7F4900057240E /* Assets.xcassets */; };
 		5F4358ED29F7F4900057240E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4358EB29F7F4900057240E /* LaunchScreen.storyboard */; };
+		5F4358F529F7F8BC0057240E /* SayacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4358F429F7F8BC0057240E /* SayacViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5F4358E929F7F4900057240E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F4358EC29F7F4900057240E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F4358EE29F7F4900057240E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F4358F429F7F8BC0057240E /* SayacViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayacViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5F4358E929F7F4900057240E /* Assets.xcassets */,
 				5F4358EB29F7F4900057240E /* LaunchScreen.storyboard */,
 				5F4358EE29F7F4900057240E /* Info.plist */,
+				5F4358F429F7F8BC0057240E /* SayacViewController.swift */,
 			);
 			path = Depolama_Islemleri_UserDefauld;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4358F529F7F8BC0057240E /* SayacViewController.swift in Sources */,
 				5F4358E529F7F48F0057240E /* ViewController.swift in Sources */,
 				5F4358E129F7F48F0057240E /* AppDelegate.swift in Sources */,
 				5F4358E329F7F48F0057240E /* SceneDelegate.swift in Sources */,
