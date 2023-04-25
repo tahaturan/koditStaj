@@ -15,6 +15,7 @@
 		5F2B526A29F6B8B500901344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B526829F6B8B500901344 /* LaunchScreen.storyboard */; };
 		5F2B527329F6BBBB00901344 /* YemekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B527229F6BBBB00901344 /* YemekTableViewCell.swift */; };
 		5F2B527629F6BD2C00901344 /* YemekModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B527529F6BD2C00901344 /* YemekModel.swift */; };
+		5F43588D29F7ACD00057240E /* DetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F43588C29F7ACD00057240E /* DetayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5F2B526B29F6B8B500901344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F2B527229F6BBBB00901344 /* YemekTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekTableViewCell.swift; sourceTree = "<group>"; };
 		5F2B527529F6BD2C00901344 /* YemekModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekModel.swift; sourceTree = "<group>"; };
+		5F43588C29F7ACD00057240E /* DetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +62,11 @@
 		5F2B525C29F6B8B400901344 /* Ornek_Yemek_App */ = {
 			isa = PBXGroup;
 			children = (
+				5F43588B29F7ACA50057240E /* ViewControllers */,
 				5F2B527429F6BD1700901344 /* Model */,
 				5F2B527129F6BB8200901344 /* TableViewCell */,
 				5F2B525D29F6B8B400901344 /* AppDelegate.swift */,
 				5F2B525F29F6B8B400901344 /* SceneDelegate.swift */,
-				5F2B526129F6B8B400901344 /* ViewController.swift */,
 				5F2B526329F6B8B400901344 /* Main.storyboard */,
 				5F2B526629F6B8B500901344 /* Assets.xcassets */,
 				5F2B526829F6B8B500901344 /* LaunchScreen.storyboard */,
@@ -87,6 +89,15 @@
 				5F2B527529F6BD2C00901344 /* YemekModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5F43588B29F7ACA50057240E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F43588C29F7ACD00057240E /* DetayViewController.swift */,
+				5F2B526129F6B8B400901344 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				5F2B527329F6BBBB00901344 /* YemekTableViewCell.swift in Sources */,
 				5F2B525E29F6B8B400901344 /* AppDelegate.swift in Sources */,
 				5F2B526029F6B8B400901344 /* SceneDelegate.swift in Sources */,
+				5F43588D29F7ACD00057240E /* DetayViewController.swift in Sources */,
 				5F2B527629F6BD2C00901344 /* YemekModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

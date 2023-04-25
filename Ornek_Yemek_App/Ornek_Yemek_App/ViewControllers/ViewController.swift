@@ -40,7 +40,7 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource , YemekTab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var gelenYemek:Yemekler = yemeklerListesi[indexPath.row]
+        let gelenYemek:Yemekler = yemeklerListesi[indexPath.row]
         
      
         
@@ -58,5 +58,18 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource , YemekTab
     func siparisVer(indexPath: IndexPath) {
         let gelenYemek = yemeklerListesi[indexPath.row]
         print("\(gelenYemek.yemekAdi ?? "") siparis verildi")
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let gelenYemek:Yemekler = yemeklerListesi[indexPath.row]
+        performSegue(withIdentifier: "detayPage", sender: gelenYemek)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let veri = sender as? Yemekler {
+            let detayViewController = segue.destination as! DetayViewController
+            
+            detayViewController.yemek = veri
+        }
     }
 }

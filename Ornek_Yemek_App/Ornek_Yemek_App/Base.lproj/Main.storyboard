@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lfa-5Y-oNf">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oHA-5N-DKL">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="yemekHucre" id="Zoo-4I-R1q" customClass="YemekTableViewCell" customModule="Ornek_Yemek_App" customModuleProvider="target">
@@ -62,7 +62,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="cJ3-Ci-2du" secondAttribute="trailing" constant="6" id="CIb-UP-vuU"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="wOS-iP-6xj" secondAttribute="bottom" constant="3" id="Cfq-il-LZi"/>
                                                 <constraint firstItem="ztC-Fs-foo" firstAttribute="leading" secondItem="QTk-cp-6En" secondAttribute="trailing" constant="20" id="Oc2-27-Qmj"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ztC-Fs-foo" secondAttribute="trailing" constant="20" symbolic="YES" id="a0p-wf-LWY"/>
                                                 <constraint firstItem="wOS-iP-6xj" firstAttribute="top" secondItem="ztC-Fs-foo" secondAttribute="bottom" constant="27" id="azF-iY-vo9"/>
+                                                <constraint firstItem="cJ3-Ci-2du" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wOS-iP-6xj" secondAttribute="trailing" constant="8" symbolic="YES" id="cOB-cn-Cz3"/>
                                                 <constraint firstItem="QTk-cp-6En" firstAttribute="top" secondItem="40O-bd-oKa" secondAttribute="top" id="eiv-Cr-oyG"/>
                                                 <constraint firstItem="QTk-cp-6En" firstAttribute="leading" secondItem="40O-bd-oKa" secondAttribute="leading" id="me1-xp-SeZ"/>
                                                 <constraint firstItem="cJ3-Ci-2du" firstAttribute="centerY" secondItem="40O-bd-oKa" secondAttribute="centerY" id="rfo-nx-QN8"/>
@@ -88,17 +90,98 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oHA-5N-DKL" secondAttribute="trailing" id="nAK-CE-buP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ieW-Sr-dd0"/>
                     <connections>
                         <outlet property="yemeklerTableView" destination="oHA-5N-DKL" id="nIc-E2-1f5"/>
+                        <segue destination="YDR-GI-ZY6" kind="show" identifier="detayPage" id="Cg1-QY-sVQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
+        </scene>
+        <!--Detay View Controller-->
+        <scene sceneID="Y6f-C2-Sg7">
+            <objects>
+                <viewController id="YDR-GI-ZY6" customClass="DetayViewController" customModule="Ornek_Yemek_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xuB-RP-cAB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hs2-ZM-cqv">
+                                <rect key="frame" x="70" y="140" width="253" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="h9e-xM-6s8"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8lJ-Y8-BfD">
+                                <rect key="frame" x="16" y="406" width="361" height="194"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="RFI-hi-47q"/>
+                                    <constraint firstAttribute="height" constant="194" id="jfG-mA-FhJ"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGd-cQ-SPH">
+                                <rect key="frame" x="120" y="676" width="153" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Sepete Ekle"/>
+                                <connections>
+                                    <action selector="sepetButton:" destination="YDR-GI-ZY6" eventType="touchUpInside" id="r7H-gk-unI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Q8-KJ-sIL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8lJ-Y8-BfD" firstAttribute="leading" secondItem="8Q8-KJ-sIL" secondAttribute="leading" constant="16" id="0dz-uw-VJK"/>
+                            <constraint firstItem="8Q8-KJ-sIL" firstAttribute="trailing" secondItem="8lJ-Y8-BfD" secondAttribute="trailing" constant="16" id="ATL-XY-6Hj"/>
+                            <constraint firstItem="Hs2-ZM-cqv" firstAttribute="top" secondItem="8Q8-KJ-sIL" secondAttribute="top" constant="37" id="Rde-Js-Lxl"/>
+                            <constraint firstItem="8Q8-KJ-sIL" firstAttribute="trailing" secondItem="Hs2-ZM-cqv" secondAttribute="trailing" constant="70" id="S09-ky-Nzx"/>
+                            <constraint firstItem="JGd-cQ-SPH" firstAttribute="top" secondItem="8lJ-Y8-BfD" secondAttribute="bottom" constant="76" id="gNm-3C-ItB"/>
+                            <constraint firstItem="8lJ-Y8-BfD" firstAttribute="top" secondItem="Hs2-ZM-cqv" secondAttribute="bottom" constant="86" id="vsd-1n-AMV"/>
+                            <constraint firstItem="Hs2-ZM-cqv" firstAttribute="leading" secondItem="8Q8-KJ-sIL" secondAttribute="leading" constant="70" id="wIr-ci-cSN"/>
+                            <constraint firstItem="JGd-cQ-SPH" firstAttribute="leading" secondItem="8Q8-KJ-sIL" secondAttribute="leading" constant="120" id="yKq-Gf-cf8"/>
+                            <constraint firstItem="8Q8-KJ-sIL" firstAttribute="trailing" secondItem="JGd-cQ-SPH" secondAttribute="trailing" constant="120" id="zH9-6C-z4M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vxw-fA-XNM"/>
+                    <connections>
+                        <outlet property="yemekResimImageView" destination="Hs2-ZM-cqv" id="IvO-dq-Zi5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21h-Hb-XFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.7022900763359" y="-35.211267605633807"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X6j-ko-M0A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lfa-5Y-oNf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jSO-jw-9S2">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rHq-A4-pg1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmH-L8-IOa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
         <image name="pizza" width="256" height="256"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
