@@ -13,6 +13,8 @@
 		5F4358A229F7BEF70057240E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4358A029F7BEF70057240E /* Main.storyboard */; };
 		5F4358A429F7BEF80057240E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4358A329F7BEF80057240E /* Assets.xcassets */; };
 		5F4358A729F7BEF80057240E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4358A529F7BEF80057240E /* LaunchScreen.storyboard */; };
+		5F4358B029F7C70F0057240E /* FilmHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4358AF29F7C70F0057240E /* FilmHucre.swift */; };
+		5F4358B329F7C88F0057240E /* FilmlerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4358B229F7C88F0057240E /* FilmlerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5F4358A329F7BEF80057240E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F4358A629F7BEF80057240E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F4358A829F7BEF80057240E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F4358AF29F7C70F0057240E /* FilmHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmHucre.swift; sourceTree = "<group>"; };
+		5F4358B229F7C88F0057240E /* FilmlerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmlerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		5F43589929F7BEF70057240E /* CollectionView_Filmler_Uygulamasi */ = {
 			isa = PBXGroup;
 			children = (
+				5F4358B129F7C87B0057240E /* Model */,
+				5F4358AE29F7C6CE0057240E /* Design */,
 				5F43589A29F7BEF70057240E /* AppDelegate.swift */,
 				5F43589C29F7BEF70057240E /* SceneDelegate.swift */,
 				5F43589E29F7BEF70057240E /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				5F4358A829F7BEF80057240E /* Info.plist */,
 			);
 			path = CollectionView_Filmler_Uygulamasi;
+			sourceTree = "<group>";
+		};
+		5F4358AE29F7C6CE0057240E /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				5F4358AF29F7C70F0057240E /* FilmHucre.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		5F4358B129F7C87B0057240E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F4358B229F7C88F0057240E /* FilmlerModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F43589F29F7BEF70057240E /* ViewController.swift in Sources */,
+				5F4358B329F7C88F0057240E /* FilmlerModel.swift in Sources */,
+				5F4358B029F7C70F0057240E /* FilmHucre.swift in Sources */,
 				5F43589B29F7BEF70057240E /* AppDelegate.swift in Sources */,
 				5F43589D29F7BEF70057240E /* SceneDelegate.swift in Sources */,
 			);
